@@ -1,4 +1,5 @@
-@media(max-width: 800px){
+/*responsividade menuHamburguer e button*/
+@media(max-width: 2000px){
     .carrossel{
         max-width: 95vw;
         height: 50vh;
@@ -11,7 +12,7 @@
         padding:0.5rem;
     }   
 }
-@media(max-width: 551px){
+@media(min-width: 2000px){
     .menu{
         display: none;
     
@@ -21,7 +22,7 @@
     }
 
 }
-@media(min-width: 552px){
+@media(min-width: 601px){
     .menuHamburguer{
         display: none;
     }

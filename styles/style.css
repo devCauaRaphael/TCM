@@ -2,11 +2,15 @@
     padding: 0%;
     margin: 0%;
 }
+body{
+    background-color: #00008b;
+    color: #f3f3f3;
+}
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    background-color: #333;
+    background-color: #1b004b;
     box-sizing: border-box;
 }
 /*estilização menu hamburguer*/
@@ -15,7 +19,7 @@ header {
     height: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     cursor: pointer;
 }
 
@@ -41,7 +45,7 @@ header {
 }
 
 .containerLogo p {
-    color:#f3f3f3;
+
     margin: 0;
 }
 .menu {
@@ -65,7 +69,6 @@ header {
 
 .menu ul li a {
     display: block;
-    padding: 10px;
     color: white;
     text-decoration: none;
 }
@@ -76,11 +79,11 @@ header {
 /*estilização carrosseis*/
 .carrossel {
     position: relative;
-    max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
-    height: 60vh; /* Altura do carrossel em relação ao viewport */
+    max-width: 3vw; /* 80% da largura do carrosel em relação ao viewport */
+    height: 3vh; /* Altura do carrossel em relação ao viewport */
     margin: 5vh auto; /* Margem superior em relação ao viewport */
     overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
-    background-color: #f0f0f0;
+    background-color: #40e0d0;
     border-radius: 1rem;
 }
 
@@ -96,20 +99,28 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 3rem; /* Tamanho do texto dos slides */
-    color: white;
     background-color: #333;
 }
-
+.container-img{
+   position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1vw;
+    height: 1vh;
+}
+/*estilização dos botoes*/
 button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     background-color: rgba(0, 0, 0, 0.5); /* vale apena usar para rgb quando tiver limite de transparencia */
-    color: white;
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
+    border-radius: 50%;
+    background-color: #00008b;
 }
 
 button.prev {
