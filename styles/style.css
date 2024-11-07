@@ -1,27 +1,75 @@
 *{
-    margin: 0%;
     padding: 0%;
+    margin: 0%;
 }
-body{
- background-color:  #1b004b;
- color: #fff;
-}
-.header nav{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    position: fixed;
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: #00008b;
-    height: 7vh;
+    background-color: #333;
+    box-sizing: border-box;
+}
+
+.menuHamburguer {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.menuHamburguer span {
+    background-color: #f3f3f3;
+    height: 3px;
     width: 100%;
-    text-align: center;
+    border-radius: 2px;
+    transition: 0.3s;
 }
-header img{
-    width: 15vw;
-    height: 15vw;
+
+.containerLogo {
+    display: flex;
+    align-items: center;
 }
-a{
-    color: #fff;
+
+.containerLogo .logo {
+    width: 2em;
+    height: 2em;
+    background-color: #f9a9a0;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.containerLogo p {
+    color:#f3f3f3;
+    margin: 0;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 30%;
+    background-color: #444;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    border-bottom: 1px solid #555;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    color: white;
     text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
 }

@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <script defer src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/responsividade.css">
     <title>Gamecraft</title>
 </head>
 <body>
-<header class="header">
-    <nav class="navbar">
-        <img src="imagens/logoCliente.png" alt="">
+<header>
+    <div class="containerLogo">
+        <div class="logo">
+
+        </div>
         <p>
-            Gamecraft
+        Gamecraft
         </p>
+    </div>
+    <div class="menuHamburguer" id="menuToggle">
+        <span></span><span></span><span></span>
+    </div>
+    <nav class="menu" id="menu">
+        <ul>
+            <li><a href="#Todos">Todos os jogos</a></li>
+            <li><a href="#Novos">Novos</a></li>
+            <li><a href="#Ofertas">Ofertas</a></li>
+            <li><a href="#Sobre">Sobre nós</a></li>
+        </ul>
     </nav>
 </header>
+<script src="scripts/script.js"></script>
+</body>
 </html>
