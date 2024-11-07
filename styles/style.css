@@ -1,0 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+ background-color:  #1b004b;
+ color: #fff;
+}
+.header nav{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00008b;
+    height: 7vh;
+    width: 100%;
+    text-align: center;
+}
+header img{
+    width: 15vw;
+    height: 15vw;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
