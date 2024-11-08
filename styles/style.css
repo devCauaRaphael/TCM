@@ -79,11 +79,12 @@ header {
 /*estilização carrosseis*/
 .carrossel {
     position: relative;
-    max-width: 3vw; /* 80% da largura do carrosel em relação ao viewport */
-    height: 3vh; /* Altura do carrossel em relação ao viewport */
+    max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
+    height: 60vh; /* Altura do carrossel em relação ao viewport */
     margin: 5vh auto; /* Margem superior em relação ao viewport */
     overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
     background-color: #40e0d0;
+    background: 100% 10;
     border-radius: 1rem;
 }
 
@@ -101,26 +102,24 @@ header {
     font-size: 3rem; /* Tamanho do texto dos slides */
     background-color: #333;
 }
-.container-img{
-   position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1vw;
-    height: 1vh;
+.container-slide{
+  
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
 }
 /*estilização dos botoes*/
 button.prev, button.next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5); /* vale apena usar para rgb quando tiver limite de transparencia */
+    /* vale apena usar para rgb quando tiver limite de transparencia */
     border: none;
     padding: 1rem;
     cursor: pointer;
     font-size: 2rem;
     border-radius: 50%;
-    background-color: #00008b;
+    background-color: transparent;
 }
 
 button.prev {
