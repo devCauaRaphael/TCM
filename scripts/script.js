@@ -13,6 +13,7 @@ document.querySelector('.next').addEventListener('click', () => {
 document.querySelector('.prev').addEventListener('click', () => {
     PrevSlide();
  });
+
  function NextSlide() {
     correrSlide = (correrSlide + 1) % slides.length;
     AlterarPosicaoSlide();
