@@ -70,12 +70,18 @@ header {
 
 .menu ul li a {
     display: block;
-    color: white;
+    color:#f3f3f3;
     text-decoration: none;
 }
 
 .menu ul li a:hover {
     background-color: #555;
+}
+h1{
+    border: 1px solid #Add8e6;
+    background-color: #Add8e6;
+    border-radius: 2rem;
+    text-align: center;
 }
 /*estilização carrosseis*/
 .carrossel01 {
