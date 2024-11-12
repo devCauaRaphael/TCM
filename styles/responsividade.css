@@ -1,28 +1,219 @@
-/*responsividade menuHamburguer e button*/
-@media(max-width: 2000px){
-    .carrossel{
-        max-width: 95vw;
-        height: 50vh;
+@media(max-width: 551px){
+    *{
+        padding: 0;
+        margin: 0;
     }
-    .slide{
-        font-size: 2rem;
+    body{
+        background-color:#1b004b ;
+        color: #f3f3f3;
     }
-    button.prev, button.next{
-        font-size: 1.5rem;
-        padding:0.5rem;
-    }   
-}
-@media(min-width: 2000px){
-    .menu{
-        display: none;
+    header {
+        position: sticky;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #00008b ;
+        box-sizing: border-box;
+    }
+    /*estilização menu hamburguer*/
+    .menuHamburguer {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
     
+    .menuHamburguer span {
+        background-color: #f3f3f3;
+        height: 3px;
+        width: 100%;
+        border-radius: 2px;
+        transition: 0.3s;
     }
-    .menu.open{
+    
+    .containerLogo {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo img {
+        width: 50px;
+        height: auto;
+        background-color: #1b004b;
+        margin-right: 10px;
+        border-radius: 50%;
+    }
+    
+    .containerLogo p {
+    
+        margin: 0;
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 30%;
+        background-color: #444;
+    }
+    
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .menu ul li {
+        border-bottom: 1px solid #555;
+    }
+    
+    .menu ul li a {
         display: block;
+        color: white;
+        text-decoration: none;
     }
-
-}
-@media(min-width: 601px){
+    
+    .menu ul li a:hover {
+        background-color: #555;
+    }
+    /*estilização carrosseis*/
+    .carrossel01 {
+        position: relative;
+        max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
+        height: 60vh; /* Altura do carrossel em relação ao viewport */
+        margin: 5vh auto; /* Margem superior em relação ao viewport */
+        overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
+        border-radius: 1rem;
+    }
+    
+    .carrossel02 {
+        position: relative;
+        max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
+        height: 60vh; /* Altura do carrossel em relação ao viewport */
+        margin: 5vh auto; /* Margem superior em relação ao viewport */
+        overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
+        border-radius: 1rem;
+    }
+    
+    .slides01 {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slides02{
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slide01 {
+        min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+        height: 100%; /* Altura dos slides */
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem; /* Tamanho do texto dos slides */
+        
+    }
+    .slide02 {
+        min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+        height: 100%; /* Altura dos slides */
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem; /* Tamanho do texto dos slides */
+        
+    }
+    
+    /*estilização dos botoes*/
+    button.prev01, button.next01 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* vale apena usar para rgb quando tiver limite de transparencia */
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 2rem;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    button.prev02, button.next02 {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        /* vale apena usar para rgb quando tiver limite de transparencia */
+        border: none;
+        padding: 1rem;
+        cursor: pointer;
+        font-size: 2rem;
+        border-radius: 50%;
+        background-color: transparent;
+    }
+    button.prev01 {
+        left: 1vw; /* 1% da largura do viewport */
+    }
+    
+    button.next01{
+        right: 1vw; /* 1% da largura do viewport */
+    }
+    button.prev02 {
+        left: 1vw; /* 1% da largura do viewport */
+    }
+    
+    button.next02 {
+        right: 1vw; /* 1% da largura do viewport */
+    }
+    
+    /*estilizacao das ofertas*/
+    .Ofertas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #f3f3f3;
+        border-radius: 1rem;
+        background-color: #Add8e6;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .Ofertas p{
+        font-size: 2rem;
+        color: #333;
+    }
+    /*estilizacão do sobre nós*/
+    .Sobre{
+        display: block;
+        color: #333;
+        background-color: #5dc1b9;
+        border-radius: 1em;
+    }
+    .Sobre h1{
+        text-align: center;
+        border: 0.5px solid #Add8e6;
+        border-radius: 2em;
+        background-color: #Add8e6;
+        margin: 5vh;
+    }
+    .Sobre p{
+        font-size: 1.2rem ;
+    }
+    /*estilizacao do footer*/
+    footer{
+        position: sticky;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #00008b ;
+        box-sizing: border-box;
+    }
+    .logo-footer img{
+        width: 50px;
+        height: auto;
+        margin-right: 10px;
+     }
+    }    
+@media(min-width: 552px){
     .menuHamburguer{
         display: none;
     }
@@ -31,16 +222,13 @@
         position: static;
         background-color: transparent;
     }
-
     .menu ul {
         display: flex;
         justify-content: space-between;
     }
-
     .menu ul li {
         border-bottom: none;
     }
-
     .menu ul li a {
         padding: 1em;
         color: #f3f3f3;

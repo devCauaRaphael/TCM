@@ -78,7 +78,7 @@ header {
     background-color: #555;
 }
 /*estilização carrosseis*/
-.carrossel {
+.carrossel01 {
     position: relative;
     max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
     height: 60vh; /* Altura do carrossel em relação ao viewport */
@@ -87,13 +87,42 @@ header {
     border-radius: 1rem;
 }
 
-.slides {
+.carrossel02 {
+    position: relative;
+    max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
+    height: 60vh; /* Altura do carrossel em relação ao viewport */
+    margin: 5vh auto; /* Margem superior em relação ao viewport */
+    overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
+    border-radius: 1rem;
+}
+
+.slides01 {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
+.slides02{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
 
-.slide {
+.slide01 {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    height: 100%; /* Altura dos slides */
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;; /* Tamanho do texto dos slides */
+    
+}
+.slide01 p{
+     color:#333 ;
+    border: 6px solid #Add8e6 ;
+    background-color: #Add8e6;
+    border-radius: 1em;
+}
+
+.slide02 {
     min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
     height: 100%; /* Altura dos slides */
     display: flex; 
@@ -102,10 +131,15 @@ header {
     font-size: 1rem; /* Tamanho do texto dos slides */
     
 }
-
+.slide02 p{
+    color:#333 ;
+    border: 6px solid #Add8e6 ;
+    background-color: #Add8e6;
+    border-radius: 1em;
+}
 
 /*estilização dos botoes*/
-button.prev, button.next {
+button.prev01, button.next01 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -117,14 +151,33 @@ button.prev, button.next {
     border-radius: 50%;
     background-color: transparent;
 }
-
-button.prev {
+button.prev02, button.next02 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    /* vale apena usar para rgb quando tiver limite de transparencia */
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: transparent;
+}
+button.prev01 {
     left: 1vw; /* 1% da largura do viewport */
 }
 
-button.next {
+button.next01{
     right: 1vw; /* 1% da largura do viewport */
 }
+button.prev02 {
+    left: 1vw; /* 1% da largura do viewport */
+}
+
+button.next02 {
+    right: 1vw; /* 1% da largura do viewport */
+}
+
 /*estilizacao das ofertas*/
 .Ofertas{
     display: flex;
