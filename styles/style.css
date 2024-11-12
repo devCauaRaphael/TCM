@@ -3,6 +3,8 @@
     margin: 0;
 }
 body{
+    width: 100%;
+    height: auto;
     background-color:#1b004b ;
     color: #f3f3f3;
 }
@@ -77,13 +79,15 @@ header {
 .menu ul li a:hover {
     background-color: #555;
 }
-h1{
-    border: 1px solid #Add8e6;
+.todosJogos h1{
+    border: 2px solid #Add8e6;
     background-color: #Add8e6;
-    border-radius: 2rem;
+    border-radius: 1em;
+    color: #333;
     text-align: center;
+    margin: 2rem;
 }
-/*estilização carrosseis*/
+tilização carrosseis*/
 .carrossel01 {
     position: relative;
     max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
@@ -106,11 +110,21 @@ h1{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+.slide01 img{
 
+    justify-content: center;
+    width:  100px;
+    height: auto; ;
+} 
 .slides02{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
+.slide01 img{
+    justify-content: center;
+    width:  100px;
+    height: auto; ;
+} 
 
 .slide01 {
     min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
