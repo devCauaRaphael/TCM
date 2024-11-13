@@ -5,11 +5,12 @@
 body{
     width: 100%;
     height: auto;
+    overflow:hidden ;
     background-color:#1b004b ;
     color: #f3f3f3;
 }
 header {
-    position: sticky;
+     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -86,8 +87,9 @@ header {
     color: #333;
     text-align: center;
     margin: 2rem;
+    
 }
-tilização carrosseis*/
+/*estilização carrosseis*/
 .carrossel01 {
     position: relative;
     max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
@@ -111,8 +113,7 @@ tilização carrosseis*/
     transition: transform 0.5s ease-in-out;
 }
 .slide01 img{
-
-    justify-content: center;
+    
     width:  100px;
     height: auto; ;
 } 
@@ -120,8 +121,8 @@ tilização carrosseis*/
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
-.slide01 img{
-    justify-content: center;
+.slide02 img{
+   
     width:  100px;
     height: auto; ;
 } 
@@ -133,7 +134,7 @@ tilização carrosseis*/
     justify-content: center;
     align-items: center;
     font-size: 1rem;; /* Tamanho do texto dos slides */
-    
+   
 }
 .slide01 p{
      color:#333 ;
@@ -240,7 +241,7 @@ footer{
     box-sizing: border-box;
 }
 .logo-footer img{
-    width: 50px;
+    width: 20px;
     height: auto;
     margin-right: 10px;
  }
