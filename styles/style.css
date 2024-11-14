@@ -2,20 +2,29 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth; /* Ativa o scroll suave */
+}
 body{
     width: 100%;
     height: auto;
     overflow:hidden ;
     background-color:#1b004b ;
     color: #f3f3f3;
+    overflow: auto; 
 }
 header {
-     position: relative;
+    position: sticky;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #00008b ;
     box-sizing: border-box;
+    top: 0; 
+    z-index: 1000;
+}
+img:hover{
+    transform: scale(1.1); 
 }
 /*estilização menu hamburguer*/
 .menuHamburguer {
@@ -53,12 +62,10 @@ header {
     margin: 0;
 }
 .menu {
-    display: none;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    width: 30%;
-    background-color: #444;
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 8px;
+    position: relative;
 }
 
 .menu ul {
@@ -78,8 +85,10 @@ header {
 }
 
 .menu ul li a:hover {
-    background-color: #555;
+   
+    background-color: #007bff;
 }
+
 .todosJogos h1{
     border: 2px solid #Add8e6;
     background-color: #Add8e6;
@@ -111,20 +120,21 @@ header {
 .slides01 {
     display: flex;
     transition: transform 0.5s ease-in-out;
+ 
 }
 .slide01 img{
-    
     width:  100px;
-    height: auto; ;
+    height: auto; 
+    margin: 7em;
 } 
 .slides02{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 .slide02 img{
-   
     width:  100px;
-    height: auto; ;
+    height: auto; 
+    margin: 7em;
 } 
 
 .slide01 {
@@ -133,7 +143,8 @@ header {
     display: flex; 
     justify-content: center;
     align-items: center;
-    font-size: 1rem;; /* Tamanho do texto dos slides */
+    font-size: 1rem; /* Tamanho do texto dos slides */
+    flex-flow: column wrap;
    
 }
 .slide01 p{
@@ -150,7 +161,7 @@ header {
     justify-content: center;
     align-items: center;
     font-size: 1rem; /* Tamanho do texto dos slides */
-    
+    flex-flow: column wrap;
 }
 .slide02 p{
     color:#333 ;
@@ -201,18 +212,25 @@ button.next02 {
 
 /*estilizacao das ofertas*/
 .Ofertas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #f3f3f3;
+    display: block;
+   
     border-radius: 1rem;
-    background-color: #Add8e6;
+    background-color: #5dc1b9;
     margin: 1rem;
     padding: 1rem;
 }
 .Ofertas p{
+    border: 1px solid #Add8e6;
+    border-radius: 1em;
+    background-color: #Add8e6;
+    text-align: center;
     font-size: 2rem;
     color: #333;
+}
+.desconto img{
+    width:  100px;
+    height: auto; 
+ 
 }
 /*estilizacão do sobre nós*/
 .Sobre{
@@ -232,16 +250,37 @@ button.next02 {
     font-size: 1.2rem ;
 }
 /*estilizacao do footer*/
-footer{
-    position: sticky;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #00008b ;
-    box-sizing: border-box;
+footer {
+    background-color: #00008b; 
+    color: #fff; 
+    padding: 5px 0; 
+    text-align: center; 
+    font-size: 10px; 
 }
-.logo-footer img{
-    width: 20px;
-    height: auto;
-    margin-right: 10px;
- }
+
+.container-footer {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px; 
+}
+
+.logo-footer img {
+    max-width: 100px; 
+    margin-bottom: 5px; 
+}
+
+.redes {
+    margin: 4px 0; 
+}
+
+.redes img {
+    width: 24px; 
+    margin: 0 5px; 
+    transition: transform 0.3s ease;
+}
+
+footer p {
+    margin-top: 10px; 
+    font-size: 8px; 
+    line-height: 1.2; 
+}
