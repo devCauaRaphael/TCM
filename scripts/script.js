@@ -4,6 +4,18 @@ const menu = document.getElementById("menu");
 menuToggle.addEventListener('click',()=>{
     menu.classList.toggle('open');
 }); 
+/*metodo troca de fundo*/
+document.getElementById('trocaFundo').addEventListener('change',function(){
+    if(this.checked){
+        document.body.classList.remove('temaEscuro');
+        document.body.classList.add('temaClaro');
+        
+    }
+    else{
+        document.body.classList.remove('temaClaro');
+        document.body.classList.add('temaEscuro');
+    }
+})
 /*metodo do carrossel*/
 /*slide 1*/
 const carrossel01 = document.querySelector(".carrossel01");

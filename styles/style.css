@@ -3,28 +3,54 @@
     margin: 0;
 }
 html {
-    scroll-behavior: smooth; /* Ativa o scroll suave */
+    scroll-behavior: smooth; 
 }
+body.temaEscuro{
+
+    --corFundo: #1b004b;
+    --corFonte: #f3f3f3;
+    --coresFundo01: #333;
+    --coresFundo02: #5dc1b9;
+    --corFundo03: #Add8e6;
+    --footerHeader: #00008b;
+    --corHover: #007bff;
+}
+body.temaClaro{
+
+    --corFundo: #f3f3f3;
+    --corFonte: #333;
+
+}
+
+
 body{
     width: 100%;
     height: auto;
     overflow:hidden ;
-    background-color:#1b004b ;
-    color: #f3f3f3;
-    overflow: auto; 
+    background-color: var(--corFundo) ;
+    color: var(--corFonte);
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    overflow-x: hidden;
 }
 header {
     position: sticky;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #00008b ;
+    background-color: var(--footerHeader); ;
     box-sizing: border-box;
     top: 0; 
     z-index: 1000;
 }
 img:hover{
     transform: scale(1.1); 
+}
+#trocaFundo{
+    right: 0;
+    width: 100px;
+    height: auto;
 }
 /*estilização menu hamburguer*/
 .menuHamburguer {
@@ -37,7 +63,7 @@ img:hover{
 }
 
 .menuHamburguer span {
-    background-color: #f3f3f3;
+    background-color: var(--corFonte);
     height: 3px;
     width: 100%;
     border-radius: 2px;
@@ -52,7 +78,7 @@ img:hover{
 .logo img {
     width: 50px;
     height: auto;
-    background-color: #1b004b;
+    background-color: var(--corFundo);
     margin-right: 10px;
     border-radius: 50%;
 }
@@ -62,7 +88,7 @@ img:hover{
     margin: 0;
 }
 .menu {
-    background-color: #333;
+    background-color: var(--coresFundo01);
     padding: 10px 0;
     border-radius: 8px;
     position: relative;
@@ -75,25 +101,25 @@ img:hover{
 }
 
 .menu ul li {
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--coresFundo01);
 }
 
 .menu ul li a {
     display: block;
-    color:#f3f3f3;
+    color:var(--corFonte);
     text-decoration: none;
 }
 
 .menu ul li a:hover {
    
-    background-color: #007bff;
+    background-color: var(--corHover);
 }
 
 .todosJogos h1{
-    border: 2px solid #Add8e6;
-    background-color: #Add8e6;
+    border: 2px solid var(--corFundo03);
+    background-color: var(--corFundo03);
     border-radius: 1em;
-    color: #333;
+    color: var(--coresFundo01);
     text-align: center;
     margin: 2rem;
     
@@ -148,10 +174,14 @@ img:hover{
    
 }
 .slide01 p{
-     color:#333 ;
-    border: 6px solid #Add8e6 ;
-    background-color: #Add8e6;
+     color: var(--coresFundo01) ;
+    border: 6px solid var(--corFundo03) ;
+    background-color: var(--corFundo03);
     border-radius: 1em;
+}
+.modalidades p{
+    color: var(--corFonte);
+    text-align: center;
 }
 
 .slide02 {
@@ -164,9 +194,9 @@ img:hover{
     flex-flow: column wrap;
 }
 .slide02 p{
-    color:#333 ;
-    border: 6px solid #Add8e6 ;
-    background-color: #Add8e6;
+    color:var(--coresFundo01);
+    border: 6px solid var(--corFundo03) ;
+    background-color: var(--corFundo03);
     border-radius: 1em;
 }
 
@@ -212,47 +242,48 @@ button.next02 {
 
 /*estilizacao das ofertas*/
 .Ofertas{
-    display: block;
-   
-    border-radius: 1rem;
-    background-color: #5dc1b9;
-    margin: 1rem;
-    padding: 1rem;
+   text-align: center;
 }
 .Ofertas p{
-    border: 1px solid #Add8e6;
+    border: 1px solid var(--corFundo03);
     border-radius: 1em;
-    background-color: #Add8e6;
+    background-color: var(--corFundo03);
     text-align: center;
     font-size: 2rem;
-    color: #333;
+    color: var(--coresFundo01);
 }
 .desconto img{
-    width:  100px;
+    width:  50vh;
     height: auto; 
  
 }
 /*estilizacão do sobre nós*/
 .Sobre{
-    display: block;
-    color: #333;
-    background-color: #5dc1b9;
+    text-align: center;
+    color: var(--coresFundo01);
+    background-color: var(--coresFundo02);
     border-radius: 1em;
+    
 }
 .Sobre h1{
     text-align: center;
-    border: 0.5px solid #Add8e6;
+    border: 0.5px solid var(--corFundo03);
     border-radius: 2em;
-    background-color: #Add8e6;
+    background-color: var(--corFundo03);
     margin: 5vh;
 }
 .Sobre p{
     font-size: 1.2rem ;
 }
+.logoSobre img{
+    width:  100px;
+    height: auto; 
+    
+}
 /*estilizacao do footer*/
 footer {
-    background-color: #00008b; 
-    color: #fff; 
+    background-color: var(--footerHeader); 
+    color: var(--corFonte); 
     padding: 5px 0; 
     text-align: center; 
     font-size: 10px; 
