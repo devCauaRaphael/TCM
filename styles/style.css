@@ -32,7 +32,7 @@ body{
     width: 100%;
     height: auto;
     overflow: auto;
-    overflow-x: hidden;
+    overflow-x: auto;
 }
 header {
     position: sticky;
@@ -47,10 +47,10 @@ header {
 img:hover{
     transform: scale(1.1); 
 }
-#trocaFundo{
+#temaToggle{
     right: 0;
     width: 100px;
-    height: auto;
+    height: 100px;
 }
 /*estilização menu hamburguer*/
 .menuHamburguer {
@@ -115,13 +115,17 @@ img:hover{
     background-color: var(--corHover);
 }
 
-.todosJogos h1{
-    border: 2px solid var(--corFundo03);
+.todosJogos, .novosJogos p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: var(--corFundo03);
+    width: 220px;
+    height: auto;
     border-radius: 1em;
     color: var(--coresFundo01);
-    text-align: center;
     margin: 2rem;
+    font-size: 2rem;
     
 }
 /*estilização carrosseis*/
@@ -179,7 +183,9 @@ img:hover{
     background-color: var(--corFundo03);
     border-radius: 1em;
 }
-.modalidades p{
+.modalidades {   
+    padding: 0; 
+    margin: 0;
     color: var(--corFonte);
     text-align: center;
 }

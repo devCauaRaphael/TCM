@@ -3,19 +3,18 @@ const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 menuToggle.addEventListener('click',()=>{
     menu.classList.toggle('open');
-}); 
-/*metodo troca de fundo*/
-document.getElementById('trocaFundo').addEventListener('change',function(){
-    if(this.checked){
-        document.body.classList.remove('temaEscuro');
-        document.body.classList.add('temaClaro');
-        
-    }
-    else{
-        document.body.classList.remove('temaClaro');
-        document.body.classList.add('temaEscuro');
-    }
 })
+
+/*metodo troca de fundo*/
+const toggleThemeButton = document.getElementById('temaToggle');
+
+toggleThemeButton.addEventListener('click', () => {
+  document.body.classList.toggle('temaClaro');
+});
+
+
+
+
 /*metodo do carrossel*/
 /*slide 1*/
 const carrossel01 = document.querySelector(".carrossel01");
@@ -61,7 +60,7 @@ function moveToSlide02(index) {
     if (index < 0) index = totalSlides02 - 1;
     if (index >= totalSlides02) index = 0;
 
-    // Atualiza a posição dos slides
+ 
     slides02.style.transform = `translateX(-${index * 100}%)`;
     index02 = index;
 }
@@ -74,5 +73,4 @@ next02.addEventListener("click", () => {
     moveToSlide02(index02 + 1);
 });
 
-// Inicializa o carrossel
 moveToSlide02(index02);
