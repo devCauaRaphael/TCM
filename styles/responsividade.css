@@ -11,22 +11,14 @@
         box-sizing: border-box;
     }
     /*estilização menu hamburguer*/
-    .menuHamburguer {
-        width: 30px;
-        height: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-    }
+    .menu{
+        display: none;
     
-    .menuHamburguer span {
-        background-color: #f3f3f3;
-        height: 3px;
-        width: 100%;
-        border-radius: 2px;
-        transition: 0.3s;
     }
+    .menu.open{
+        display: block;
+    }
+
     
     .containerLogo {
         display: flex;
@@ -54,25 +46,7 @@
         background-color: #444;
     }
     
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-    
-    .menu ul li {
-        border-bottom: 1px solid #555;
-    }
-    
-    .menu ul li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-    }
-    
-    .menu ul li a:hover {
-        background-color: #555;
-    }
+
     /*estilização carrosseis*/
     .carrossel01 {
         position: relative;
@@ -133,6 +107,7 @@
         font-size: 2rem;
         border-radius: 50%;
         background-color: transparent;
+        
     }
     button.prev02, button.next02 {
         position: absolute;

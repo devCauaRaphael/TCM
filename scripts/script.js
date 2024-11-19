@@ -3,8 +3,7 @@ const menuToggle = document.getElementById("menuToggle");
 const menu = document.getElementById("menu");
 menuToggle.addEventListener('click',()=>{
     menu.classList.toggle('open');
-})
-
+}); 
 /*metodo troca de fundo*/
 const toggleThemeButton = document.getElementById('temaToggle');
 

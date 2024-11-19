@@ -51,6 +51,12 @@ img:hover{
     right: 0;
     width: 100px;
     height: 100px;
+    width: 50px;
+    height: auto;
+    background-color: var(--corFonte);
+    margin-right: 10px;
+    border-radius: 50%;
+    border: none;
 }
 /*estilização menu hamburguer*/
 .menuHamburguer {
@@ -59,15 +65,26 @@ img:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    cursor: pointer;
 }
 
 .menuHamburguer span {
     background-color: var(--corFonte);
+    display: block;
     height: 3px;
     width: 100%;
     border-radius: 2px;
     transition: 0.3s;
+    margin-bottom: 5px;
+}
+.menu{
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    border-bottom: 3px solid #333;
 }
 
 .containerLogo {
@@ -146,12 +163,14 @@ img:hover{
 .slides01 {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    
  
 }
 .slide01 img{
     width:  100px;
     height: auto; 
     margin: 7em;
+    
 } 
 .slides02{
     display: flex;
@@ -170,13 +189,13 @@ img:hover{
     justify-content: center;
     align-items: center;
     font-size: 1rem; /* Tamanho do texto dos slides */
-    flex-flow: column wrap;
-   
+    flex-flow: column wrap; 
 }
+
 .slide01 p{
-     color: var(--coresFundo01) ;
-    border: 6px solid var(--corFundo03) ;
-    background-color: var(--corFundo03);
+     color: var(--corFonte) ;
+    border: 6px solid var(--footerHeader);
+    background-color: var(--footerHeader);
     border-radius: 1em;
 }
 .modalidades {   
@@ -196,9 +215,9 @@ img:hover{
     flex-flow: column wrap;
 }
 .slide02 p{
-    color:var(--coresFundo01);
-    border: 6px solid var(--corFundo03) ;
-    background-color: var(--corFundo03);
+    color:var(--corFonte);
+    border: 6px solid var(--footerHeader) ;
+    background-color: var(--footerHeader);
     border-radius: 1em;
 }
 
