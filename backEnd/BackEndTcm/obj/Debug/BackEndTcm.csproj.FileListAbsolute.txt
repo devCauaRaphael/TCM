@@ -1,0 +1,12 @@
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\bin\Debug\BackEndTcm.exe.config
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\bin\Debug\BackEndTcm.exe
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\bin\Debug\BackEndTcm.pdb
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.csproj.AssemblyReference.cache
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.Form1.resources
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmSplash.resources
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.Properties.Resources.resources
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.csproj.GenerateResource.cache
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.csproj.CoreCompileInputs.cache
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.exe
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.pdb
+C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmLogin.resources
