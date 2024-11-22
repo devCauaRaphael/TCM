@@ -21,5 +21,29 @@ namespace BackEndTcm
         {
 
         }
+
+        private void btnCadastroCli_Click(object sender, EventArgs e)
+        {
+            frmCadastrarCliente cliente = new frmCadastrarCliente();
+            cliente.Show();
+            this.Hide();
+        }
+
+        private void btnConsultaCli_Click(object sender, EventArgs e)
+        {
+            frmConsultarCliente consCliente = new frmConsultarCliente();
+            consCliente.Show();
+            this.Hide();
+        }
+
+        private void btnCadastroLoja_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void btnConsultaLoja_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

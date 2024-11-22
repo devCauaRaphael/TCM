@@ -19,13 +19,24 @@ namespace BackEndTcm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "Admin" && txtSenha.Text == "cidade123")
-            {
-                frmMenu menu = new frmMenu();
-                menu.Show();
-                MessageBox.Show("acesso ao sistema realizado!");
-                this.Hide();
+           
+                if (txtUsuario.Text == "Admin" && txtSenha.Text == "cidade123")
+                {
+                    frmMenu menu = new frmMenu();
+                    menu.Show();
+                    MessageBox.Show("acesso ao sistema realizado!");
+                    this.Hide();
+                }
+            
+                else {
+                    MessageBox.Show("Usuário ou senha inválidos!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtUsuario.Focus();
+                    txtSenha.Focus();
+                    txtUsuario.Clear();
+                    txtSenha.Clear();
+                }
+               
             }
         }
     }
-}
+

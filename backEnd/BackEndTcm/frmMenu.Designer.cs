@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.btnCadastroCli = new System.Windows.Forms.Button();
+            this.btnConsultaCli = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -36,11 +39,43 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(200, 20);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(357, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "CADASTROS E CONSULTAS";
+            // 
+            // btnCadastroCli
+            // 
+            this.btnCadastroCli.Location = new System.Drawing.Point(316, 123);
+            this.btnCadastroCli.Name = "btnCadastroCli";
+            this.btnCadastroCli.Size = new System.Drawing.Size(108, 38);
+            this.btnCadastroCli.TabIndex = 1;
+            this.btnCadastroCli.Text = "CADASTRAR";
+            this.btnCadastroCli.UseVisualStyleBackColor = true;
+            this.btnCadastroCli.Click += new System.EventHandler(this.btnCadastroCli_Click);
+            // 
+            // btnConsultaCli
+            // 
+            this.btnConsultaCli.Location = new System.Drawing.Point(316, 214);
+            this.btnConsultaCli.Name = "btnConsultaCli";
+            this.btnConsultaCli.Size = new System.Drawing.Size(108, 38);
+            this.btnConsultaCli.TabIndex = 2;
+            this.btnConsultaCli.Text = "CONSULTAR";
+            this.btnConsultaCli.UseVisualStyleBackColor = true;
+            this.btnConsultaCli.Click += new System.EventHandler(this.btnConsultaCli_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(327, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(86, 20);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "CLIENTE";
             // 
             // frmMenu
             // 
@@ -48,6 +83,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btnConsultaCli);
+            this.Controls.Add(this.btnCadastroCli);
             this.Controls.Add(this.label1);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -60,5 +98,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnCadastroCli;
+        private System.Windows.Forms.Button btnConsultaCli;
+        private System.Windows.Forms.Label label2;
     }
 }
