@@ -12,12 +12,20 @@ namespace BackEndTcm
 {
     public partial class Form1 : Form
     {
-        String caminho = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database";
-        
+        string caminhoRegistro = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\registro.txt";
+        string loginEmail = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\loginEmail.txt";
+        string loginSenha = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\loginSenha.txt";
+
 
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent()
+
+            txtSenha.PasswordChar = '*';
+            txtLoginSenha.PasswordChar= '*';
+            txtEmail.CharacterCasing = CharacterCasing.Lower;
+            txtLoginEmail.CharacterCasing = CharacterCasing.Lower;
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,6 +39,21 @@ namespace BackEndTcm
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnApagar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoginEntrar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoginApagar_Click(object sender, EventArgs e)
         {
 
         }

@@ -147,6 +147,7 @@
             this.btnApagar.TabIndex = 11;
             this.btnApagar.Text = "APAGAR";
             this.btnApagar.UseVisualStyleBackColor = true;
+            this.btnApagar.Click += new System.EventHandler(this.btnApagar_Click);
             // 
             // txtLoginEmail
             // 
@@ -188,6 +189,7 @@
             this.btnLoginApagar.TabIndex = 17;
             this.btnLoginApagar.Text = "APAGAR";
             this.btnLoginApagar.UseVisualStyleBackColor = true;
+            this.btnLoginApagar.Click += new System.EventHandler(this.btnLoginApagar_Click);
             // 
             // btnLoginEntrar
             // 
@@ -197,6 +199,7 @@
             this.btnLoginEntrar.TabIndex = 16;
             this.btnLoginEntrar.Text = "ENTRAR";
             this.btnLoginEntrar.UseVisualStyleBackColor = true;
+            this.btnLoginEntrar.Click += new System.EventHandler(this.btnLoginEntrar_Click);
             // 
             // Form1
             // 

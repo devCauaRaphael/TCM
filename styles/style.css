@@ -18,7 +18,7 @@ body.temaEscuro{
 body.temaClaro{
 
     --corFundo: #f3f3f3;
-    --corFonte: #333;
+
 
 }
 
@@ -37,7 +37,7 @@ body{
 header {
     position: sticky;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--footerHeader); ;
     box-sizing: border-box;
@@ -48,17 +48,19 @@ img:hover{
     transform: scale(1.1); 
 }
 #temaToggle{
-    right: 0;
-    width: 100px;
-    height: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
     width: 50px;
     height: auto;
     background-color: var(--corFonte);
-    margin-right: 10px;
+    margin-left: 3vh;
     border-radius: 50%;
     border: none;
 }
-/*estilização menu hamburguer*/
+
+/*zação menu hamburguer*/
 .menuHamburguer {
     width: 30px;
     height: 30px;
@@ -107,8 +109,8 @@ img:hover{
 .menu {
     background-color: var(--coresFundo01);
     padding: 10px 0;
-    border-radius: 8px;
     position: relative;
+
 }
 
 .menu ul {
@@ -149,7 +151,7 @@ img:hover{
     margin: 5vh auto; /* Margem superior em relação ao viewport */
     overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
     border-radius: 1rem;
-}
+}  
 
 .carrossel02 {
     position: relative;
@@ -163,9 +165,10 @@ img:hover{
 .slides01 {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    
+   
+  }
  
-}
+
 .slide01 img{
     width:  100px;
     height: auto; 
@@ -180,6 +183,7 @@ img:hover{
     width:  100px;
     height: auto; 
     margin: 7em;
+    
 } 
 
 .slide01 {
@@ -189,7 +193,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     font-size: 1rem; /* Tamanho do texto dos slides */
-    flex-flow: column wrap; 
+    flex-direction: column; 
 }
 
 .slide01 p{
@@ -198,12 +202,7 @@ img:hover{
     background-color: var(--footerHeader);
     border-radius: 1em;
 }
-.modalidades {   
-    padding: 0; 
-    margin: 0;
-    color: var(--corFonte);
-    text-align: center;
-}
+
 
 .slide02 {
     min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
@@ -212,7 +211,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     font-size: 1rem; /* Tamanho do texto dos slides */
-    flex-flow: column wrap;
+    flex-direction: column;
 }
 .slide02 p{
     color:var(--corFonte);
@@ -220,6 +219,7 @@ img:hover{
     background-color: var(--footerHeader);
     border-radius: 1em;
 }
+
 
 /*estilização dos botoes*/
 button.prev01, button.next01 {
@@ -284,7 +284,7 @@ button.next02 {
     color: var(--coresFundo01);
     background-color: var(--coresFundo02);
     border-radius: 1em;
-    
+   margin: 1vh;
 }
 .Sobre h1{
     text-align: center;
