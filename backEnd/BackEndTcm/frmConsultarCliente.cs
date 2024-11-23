@@ -21,48 +21,47 @@ namespace BackEndTcm
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            if (File.Exists(caminho))
-            {
-                try
-                {
-                    
-                    using (StreamReader sw = new StreamReader(caminho))
-                    {
-                        
-                        string conteudo = sw.ReadToEnd();
 
-                        
-                        txtNome.Text = conteudo;
-                        txtEmail.Text = conteudo;
-                        txtUsuario.Text = conteudo;
-                        txtSenha.Text = conteudo;
-                        mskTelefone.Text = conteudo;
-                    }
-                }
-                catch (Exception ex)
-                {
-                  
-                    MessageBox.Show("Erro ao ler o arquivo: " + ex.Message);
-                }
-            }
-            else
-            {
-                
-                MessageBox.Show("Arquivo não encontrado.");
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            txtEmail.Clear();
-            txtNome.Clear();
-            txtSenha.Clear();
-            txtUsuario.Clear();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-           frmMenu menu = new frmMenu();
+           
+        }
+
+        private void frmConsultarCliente_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lsbConsulta_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnConsultar_Click_1(object sender, EventArgs e)
+        {
+            List<string> listas = new List<string>();
+            string lista;
+
+            using (StreamReader sr = new StreamReader(caminho))
+            {
+                while ((lista = sr.ReadLine()) != null)
+                {
+                    listas.Add(lista);
+                }
+                lsbConsulta.DataSource = listas;
+            }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            frmMenu menu = new frmMenu();
             menu.Show();
             this.Hide();
         }

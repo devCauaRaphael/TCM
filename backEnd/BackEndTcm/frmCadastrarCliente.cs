@@ -26,13 +26,14 @@ namespace BackEndTcm
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if(txtNome.Text == "" && txtSenha.Text == "" && txtEmail.Text == "" && mskTelefone.Text == "")
+            if(txtUsuario.Text == "" && txtNome.Text == "" && txtSenha.Text == "" && txtEmail.Text == "" && mskTelefone.Text == "")
             {
                 MessageBox.Show("Dados Invalidos");
             }
             else
             {
                 StreamWriter sw = new StreamWriter(caminho, true);
+                sw.WriteLine(txtUsuario.Text);
                 sw.WriteLine(txtNome.Text);
                 sw.WriteLine(txtEmail.Text);
                 sw.WriteLine(txtSenha.Text);
@@ -45,6 +46,10 @@ namespace BackEndTcm
                 txtEmail.Clear();
                 txtSenha.Clear();
                 mskTelefone.Clear();
+                
+                frmMenu menu = new frmMenu();
+                menu.Show();
+                this.Hide();
             }
         }
 

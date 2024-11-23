@@ -40,6 +40,8 @@
             this.lblEmail = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.mskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnCadastrar
@@ -160,12 +162,32 @@
             this.mskTelefone.Size = new System.Drawing.Size(119, 22);
             this.mskTelefone.TabIndex = 3;
             // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(308, 77);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(155, 22);
+            this.txtUsuario.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(227, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(74, 20);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Usuário";
+            // 
             // frmCadastrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.mskTelefone);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtEmail);
@@ -201,5 +223,7 @@
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MaskedTextBox mskTelefone;
+        private System.Windows.Forms.TextBox txtUsuario;
+        private System.Windows.Forms.Label label2;
     }
 }
