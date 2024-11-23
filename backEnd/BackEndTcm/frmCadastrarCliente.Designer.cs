@@ -50,7 +50,7 @@
             this.btnCadastrar.Location = new System.Drawing.Point(231, 388);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(109, 30);
-            this.btnCadastrar.TabIndex = 4;
+            this.btnCadastrar.TabIndex = 5;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = true;
             this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
@@ -61,7 +61,7 @@
             this.btnLimpar.Location = new System.Drawing.Point(369, 388);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(94, 30);
-            this.btnLimpar.TabIndex = 5;
+            this.btnLimpar.TabIndex = 6;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
@@ -72,7 +72,7 @@
             this.btnSair.Location = new System.Drawing.Point(492, 388);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(101, 30);
-            this.btnSair.TabIndex = 6;
+            this.btnSair.TabIndex = 7;
             this.btnSair.Text = "SAIR";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
@@ -104,14 +104,14 @@
             this.txtNome.Location = new System.Drawing.Point(308, 115);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(155, 22);
-            this.txtNome.TabIndex = 0;
+            this.txtNome.TabIndex = 1;
             // 
             // txtSenha
             // 
             this.txtSenha.Location = new System.Drawing.Point(308, 208);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(155, 22);
-            this.txtSenha.TabIndex = 2;
+            this.txtSenha.TabIndex = 3;
             this.txtSenha.UseSystemPasswordChar = true;
             // 
             // label3
@@ -130,7 +130,7 @@
             this.txtEmail.Location = new System.Drawing.Point(308, 162);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(155, 22);
-            this.txtEmail.TabIndex = 1;
+            this.txtEmail.TabIndex = 2;
             // 
             // lblEmail
             // 
@@ -160,14 +160,14 @@
             this.mskTelefone.Mask = "(00)00000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(119, 22);
-            this.mskTelefone.TabIndex = 3;
+            this.mskTelefone.TabIndex = 4;
             // 
             // txtUsuario
             // 
             this.txtUsuario.Location = new System.Drawing.Point(308, 77);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(155, 22);
-            this.txtUsuario.TabIndex = 11;
+            this.txtUsuario.TabIndex = 0;
             // 
             // label2
             // 
