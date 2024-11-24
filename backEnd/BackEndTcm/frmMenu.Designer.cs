@@ -32,6 +32,7 @@
             this.btnCadastroCli = new System.Windows.Forms.Button();
             this.btnConsultaCli = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnUtilitarios = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -77,12 +78,23 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "CLIENTE";
             // 
+            // btnUtilitarios
+            // 
+            this.btnUtilitarios.Location = new System.Drawing.Point(316, 297);
+            this.btnUtilitarios.Name = "btnUtilitarios";
+            this.btnUtilitarios.Size = new System.Drawing.Size(108, 38);
+            this.btnUtilitarios.TabIndex = 3;
+            this.btnUtilitarios.Text = "UTILITÁRIOS";
+            this.btnUtilitarios.UseVisualStyleBackColor = true;
+            this.btnUtilitarios.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUtilitarios);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnConsultaCli);
             this.Controls.Add(this.btnCadastroCli);
@@ -101,5 +113,6 @@
         private System.Windows.Forms.Button btnCadastroCli;
         private System.Windows.Forms.Button btnConsultaCli;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button btnUtilitarios;
     }
 }

@@ -45,5 +45,12 @@ namespace BackEndTcm
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmUtilitarios utilitarios = new frmUtilitarios();
+            utilitarios.Show();
+            this.Hide();
+        }
     }
 }

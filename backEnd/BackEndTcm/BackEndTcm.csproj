@@ -58,11 +58,35 @@
     <Compile Include="frmConsultarCliente.Designer.cs">
       <DependentUpon>frmConsultarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmFatorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFatorial.Designer.cs">
+      <DependentUpon>frmFatorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFibonacci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFibonacci.Designer.cs">
+      <DependentUpon>frmFibonacci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmFutebol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmFutebol.Designer.cs">
+      <DependentUpon>frmFutebol.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMaiorMenor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMaiorMenor.Designer.cs">
+      <DependentUpon>frmMaiorMenor.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMenu.cs">
       <SubType>Form</SubType>
@@ -70,11 +94,23 @@
     <Compile Include="frmMenu.Designer.cs">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMes.Designer.cs">
+      <DependentUpon>frmMes.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUtilitarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUtilitarios.Designer.cs">
+      <DependentUpon>frmUtilitarios.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -84,14 +120,32 @@
     <EmbeddedResource Include="frmConsultarCliente.resx">
       <DependentUpon>frmConsultarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFatorial.resx">
+      <DependentUpon>frmFatorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFibonacci.resx">
+      <DependentUpon>frmFibonacci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFutebol.resx">
+      <DependentUpon>frmFutebol.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMaiorMenor.resx">
+      <DependentUpon>frmMaiorMenor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmMes.resx">
+      <DependentUpon>frmMes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUtilitarios.resx">
+      <DependentUpon>frmUtilitarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
