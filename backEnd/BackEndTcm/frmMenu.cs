@@ -139,5 +139,36 @@ namespace BackEndTcm
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frmMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+        private int index = 0;
+        private void timeEfeitoDigitacao_Tick(object sender, EventArgs e)
+        {
+             string mensagem = "Seja bem-vindo";
+        
+    
+            if (index < mensagem.Length) {
+
+               lblSejaBemVindo.Text += mensagem[index];
+                index++;
+            }
+            else
+            {
+                timeEfeitoDigitacao.Stop();
+            }
+        }
     }
 }
