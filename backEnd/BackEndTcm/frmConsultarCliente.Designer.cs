@@ -31,6 +31,7 @@
             this.lsbConsulta = new System.Windows.Forms.ListBox();
             this.btnConsultar = new System.Windows.Forms.Button();
             this.btnSair = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lsbConsulta
@@ -49,10 +50,10 @@
             // btnConsultar
             // 
             this.btnConsultar.ForeColor = System.Drawing.Color.Lime;
-            this.btnConsultar.Location = new System.Drawing.Point(168, 320);
+            this.btnConsultar.Location = new System.Drawing.Point(187, 320);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(101, 23);
-            this.btnConsultar.TabIndex = 1;
+            this.btnConsultar.Size = new System.Drawing.Size(113, 23);
+            this.btnConsultar.TabIndex = 0;
             this.btnConsultar.Text = "CONSULTAR";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click_1);
@@ -60,13 +61,24 @@
             // btnSair
             // 
             this.btnSair.ForeColor = System.Drawing.Color.Red;
-            this.btnSair.Location = new System.Drawing.Point(395, 320);
+            this.btnSair.Location = new System.Drawing.Point(510, 320);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(75, 23);
+            this.btnSair.Size = new System.Drawing.Size(87, 23);
             this.btnSair.TabIndex = 3;
-            this.btnSair.Text = "SAIR";
+            this.btnSair.Text = "VOLTAR";
             this.btnSair.UseVisualStyleBackColor = true;
             this.btnSair.Click += new System.EventHandler(this.btnSair_Click);
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.ForeColor = System.Drawing.Color.Red;
+            this.btnExcluir.Location = new System.Drawing.Point(357, 320);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(84, 23);
+            this.btnExcluir.TabIndex = 2;
+            this.btnExcluir.Text = "EXCLUIR";
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // frmConsultarCliente
             // 
@@ -74,6 +86,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnSair);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.lsbConsulta);
@@ -91,5 +104,6 @@
         private System.Windows.Forms.ListBox lsbConsulta;
         private System.Windows.Forms.Button btnConsultar;
         private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnExcluir;
     }
 }

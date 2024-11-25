@@ -33,6 +33,7 @@
             this.btnConsultaCli = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.btnUtilitarios = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -59,7 +60,7 @@
             // 
             // btnConsultaCli
             // 
-            this.btnConsultaCli.Location = new System.Drawing.Point(316, 214);
+            this.btnConsultaCli.Location = new System.Drawing.Point(316, 177);
             this.btnConsultaCli.Name = "btnConsultaCli";
             this.btnConsultaCli.Size = new System.Drawing.Size(108, 38);
             this.btnConsultaCli.TabIndex = 2;
@@ -80,7 +81,7 @@
             // 
             // btnUtilitarios
             // 
-            this.btnUtilitarios.Location = new System.Drawing.Point(316, 297);
+            this.btnUtilitarios.Location = new System.Drawing.Point(316, 295);
             this.btnUtilitarios.Name = "btnUtilitarios";
             this.btnUtilitarios.Size = new System.Drawing.Size(108, 38);
             this.btnUtilitarios.TabIndex = 3;
@@ -88,12 +89,23 @@
             this.btnUtilitarios.UseVisualStyleBackColor = true;
             this.btnUtilitarios.Click += new System.EventHandler(this.button1_Click);
             // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Location = new System.Drawing.Point(286, 238);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(184, 38);
+            this.btnAtualizar.TabIndex = 6;
+            this.btnAtualizar.Text = "ATUALIZAR CADASTRO";
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAtualizar);
             this.Controls.Add(this.btnUtilitarios);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnConsultaCli);
@@ -114,5 +126,6 @@
         private System.Windows.Forms.Button btnConsultaCli;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnUtilitarios;
+        private System.Windows.Forms.Button btnAtualizar;
     }
 }

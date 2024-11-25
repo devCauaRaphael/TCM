@@ -17,7 +17,7 @@ namespace BackEndTcm
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
           
-            Application.Run(new frmFibonacci());
+            Application.Run(new frmMenu());
         }
     }
 }

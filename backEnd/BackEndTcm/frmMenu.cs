@@ -52,5 +52,17 @@ namespace BackEndTcm
             utilitarios.Show();
             this.Hide();
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+            frmAtualizar atualizar = new frmAtualizar();
+            atualizar.Show();
+            this.Hide();
+        }
     }
 }

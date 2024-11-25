@@ -49,7 +49,7 @@ namespace BackEndTcm
             List<string> listas = new List<string>();
             string lista;
 
-            using (StreamReader sr = new StreamReader(caminho))
+            using (StreamReader sr = new StreamReader(caminho)) 
             {
                 while ((lista = sr.ReadLine()) != null)
                 {
@@ -64,6 +64,38 @@ namespace BackEndTcm
             frmMenu menu = new frmMenu();
             menu.Show();
             this.Hide();
+        }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+            if (File.Exists(caminho))
+            {
+                try
+                {
+                    
+                    var linhas = File.ReadAllLines(caminho).ToList();
+
+                    File.WriteAllText(caminho, string.Empty);
+
+                    MessageBox.Show("Registro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ocorreu um erro: {ex.Message}", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Hide();
+        }
+
+        private void btnAtualizar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
