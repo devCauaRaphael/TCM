@@ -61,9 +61,8 @@ namespace BackEndTcm
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            frmMenu menu = new frmMenu();
-            menu.Show();
-            this.Hide();
+         
+            this.Close();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)

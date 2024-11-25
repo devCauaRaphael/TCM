@@ -112,12 +112,6 @@
     <Compile Include="frmSplash.Designer.cs">
       <DependentUpon>frmSplash.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmUtilitarios.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmUtilitarios.Designer.cs">
-      <DependentUpon>frmUtilitarios.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmAtualizar.resx">
@@ -152,9 +146,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmUtilitarios.resx">
-      <DependentUpon>frmUtilitarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

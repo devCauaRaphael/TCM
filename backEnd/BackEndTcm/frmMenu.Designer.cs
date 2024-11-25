@@ -28,92 +28,171 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnCadastroCli = new System.Windows.Forms.Button();
-            this.btnConsultaCli = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.btnUtilitarios = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cLIENTESToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.pRODUTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.uTILITÁRIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aTUALIZARCADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cONSULTARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cADASTRARPRODUTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eDITARCADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eDITARCADASTROToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fIBONACCIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fATORIALToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mENOREMAIORToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mÊSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fUTEBOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // menuStrip1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(200, 20);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(357, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "CADASTROS E CONSULTAS";
+            this.menuStrip1.BackColor = System.Drawing.Color.Navy;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.ImeMode = System.Windows.Forms.ImeMode.Hiragana;
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cLIENTESToolStripMenuItem,
+            this.pRODUTOSToolStripMenuItem,
+            this.uTILITÁRIOSToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.MdiWindowListItem = this.cLIENTESToolStripMenuItem;
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(800, 37);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnCadastroCli
+            // cLIENTESToolStripMenuItem
             // 
-            this.btnCadastroCli.Location = new System.Drawing.Point(316, 123);
-            this.btnCadastroCli.Name = "btnCadastroCli";
-            this.btnCadastroCli.Size = new System.Drawing.Size(108, 38);
-            this.btnCadastroCli.TabIndex = 1;
-            this.btnCadastroCli.Text = "CADASTRAR";
-            this.btnCadastroCli.UseVisualStyleBackColor = true;
-            this.btnCadastroCli.Click += new System.EventHandler(this.btnCadastroCli_Click);
+            this.cLIENTESToolStripMenuItem.BackColor = System.Drawing.Color.Navy;
+            this.cLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cADASTRARToolStripMenuItem,
+            this.aTUALIZARCADASTROToolStripMenuItem,
+            this.cONSULTARToolStripMenuItem});
+            this.cLIENTESToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cLIENTESToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
+            this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(127, 33);
+            this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
+            this.cLIENTESToolStripMenuItem.Click += new System.EventHandler(this.cLIENTESToolStripMenuItem_Click);
             // 
-            // btnConsultaCli
+            // pRODUTOSToolStripMenuItem
             // 
-            this.btnConsultaCli.Location = new System.Drawing.Point(316, 177);
-            this.btnConsultaCli.Name = "btnConsultaCli";
-            this.btnConsultaCli.Size = new System.Drawing.Size(108, 38);
-            this.btnConsultaCli.TabIndex = 2;
-            this.btnConsultaCli.Text = "CONSULTAR";
-            this.btnConsultaCli.UseVisualStyleBackColor = true;
-            this.btnConsultaCli.Click += new System.EventHandler(this.btnConsultaCli_Click);
+            this.pRODUTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.cADASTRARPRODUTOSToolStripMenuItem,
+            this.eDITARCADASTROToolStripMenuItem,
+            this.eDITARCADASTROToolStripMenuItem1});
+            this.pRODUTOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pRODUTOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.pRODUTOSToolStripMenuItem.Name = "pRODUTOSToolStripMenuItem";
+            this.pRODUTOSToolStripMenuItem.Size = new System.Drawing.Size(151, 33);
+            this.pRODUTOSToolStripMenuItem.Text = "PRODUTOS";
             // 
-            // label2
+            // uTILITÁRIOSToolStripMenuItem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(327, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 20);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "CLIENTE";
+            this.uTILITÁRIOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fIBONACCIToolStripMenuItem,
+            this.fATORIALToolStripMenuItem,
+            this.mENOREMAIORToolStripMenuItem,
+            this.mÊSToolStripMenuItem,
+            this.fUTEBOLToolStripMenuItem});
+            this.uTILITÁRIOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uTILITÁRIOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.uTILITÁRIOSToolStripMenuItem.Name = "uTILITÁRIOSToolStripMenuItem";
+            this.uTILITÁRIOSToolStripMenuItem.Size = new System.Drawing.Size(166, 33);
+            this.uTILITÁRIOSToolStripMenuItem.Text = "UTILITÁRIOS";
+            this.uTILITÁRIOSToolStripMenuItem.Click += new System.EventHandler(this.uTILITÁRIOSToolStripMenuItem_Click);
             // 
-            // btnUtilitarios
+            // cADASTRARToolStripMenuItem
             // 
-            this.btnUtilitarios.Location = new System.Drawing.Point(316, 295);
-            this.btnUtilitarios.Name = "btnUtilitarios";
-            this.btnUtilitarios.Size = new System.Drawing.Size(108, 38);
-            this.btnUtilitarios.TabIndex = 3;
-            this.btnUtilitarios.Text = "UTILITÁRIOS";
-            this.btnUtilitarios.UseVisualStyleBackColor = true;
-            this.btnUtilitarios.Click += new System.EventHandler(this.button1_Click);
+            this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
+            this.cADASTRARToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
+            this.cADASTRARToolStripMenuItem.Text = "CADASTRAR";
+            this.cADASTRARToolStripMenuItem.Click += new System.EventHandler(this.cADASTRARToolStripMenuItem_Click);
             // 
-            // btnAtualizar
+            // aTUALIZARCADASTROToolStripMenuItem
             // 
-            this.btnAtualizar.Location = new System.Drawing.Point(286, 238);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(184, 38);
-            this.btnAtualizar.TabIndex = 6;
-            this.btnAtualizar.Text = "ATUALIZAR CADASTRO";
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.btnAtualizar_Click);
+            this.aTUALIZARCADASTROToolStripMenuItem.Name = "aTUALIZARCADASTROToolStripMenuItem";
+            this.aTUALIZARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
+            this.aTUALIZARCADASTROToolStripMenuItem.Text = "EDITAR CADASTRO";
+            this.aTUALIZARCADASTROToolStripMenuItem.Click += new System.EventHandler(this.aTUALIZARCADASTROToolStripMenuItem_Click);
+            // 
+            // cONSULTARToolStripMenuItem
+            // 
+            this.cONSULTARToolStripMenuItem.Name = "cONSULTARToolStripMenuItem";
+            this.cONSULTARToolStripMenuItem.Size = new System.Drawing.Size(253, 26);
+            this.cONSULTARToolStripMenuItem.Text = "CONSULTAR CADASTRO";
+            this.cONSULTARToolStripMenuItem.Click += new System.EventHandler(this.cONSULTARToolStripMenuItem_Click);
+            // 
+            // cADASTRARPRODUTOSToolStripMenuItem
+            // 
+            this.cADASTRARPRODUTOSToolStripMenuItem.Name = "cADASTRARPRODUTOSToolStripMenuItem";
+            this.cADASTRARPRODUTOSToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.cADASTRARPRODUTOSToolStripMenuItem.Text = "CADASTRAR PRODUTOS";
+            // 
+            // eDITARCADASTROToolStripMenuItem
+            // 
+            this.eDITARCADASTROToolStripMenuItem.Name = "eDITARCADASTROToolStripMenuItem";
+            this.eDITARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(255, 26);
+            this.eDITARCADASTROToolStripMenuItem.Text = "CONSULTAR CADASTRO";
+            this.eDITARCADASTROToolStripMenuItem.Click += new System.EventHandler(this.eDITARCADASTROToolStripMenuItem_Click);
+            // 
+            // eDITARCADASTROToolStripMenuItem1
+            // 
+            this.eDITARCADASTROToolStripMenuItem1.Name = "eDITARCADASTROToolStripMenuItem1";
+            this.eDITARCADASTROToolStripMenuItem1.Size = new System.Drawing.Size(255, 26);
+            this.eDITARCADASTROToolStripMenuItem1.Text = "EDITAR CADASTRO";
+            // 
+            // fIBONACCIToolStripMenuItem
+            // 
+            this.fIBONACCIToolStripMenuItem.Name = "fIBONACCIToolStripMenuItem";
+            this.fIBONACCIToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fIBONACCIToolStripMenuItem.Text = "FIBONACCI";
+            this.fIBONACCIToolStripMenuItem.Click += new System.EventHandler(this.fIBONACCIToolStripMenuItem_Click);
+            // 
+            // fATORIALToolStripMenuItem
+            // 
+            this.fATORIALToolStripMenuItem.Name = "fATORIALToolStripMenuItem";
+            this.fATORIALToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fATORIALToolStripMenuItem.Text = "FATORIAL";
+            this.fATORIALToolStripMenuItem.Click += new System.EventHandler(this.fATORIALToolStripMenuItem_Click);
+            // 
+            // mENOREMAIORToolStripMenuItem
+            // 
+            this.mENOREMAIORToolStripMenuItem.Name = "mENOREMAIORToolStripMenuItem";
+            this.mENOREMAIORToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mENOREMAIORToolStripMenuItem.Text = "MENOR E MAIOR";
+            this.mENOREMAIORToolStripMenuItem.Click += new System.EventHandler(this.mENOREMAIORToolStripMenuItem_Click);
+            // 
+            // mÊSToolStripMenuItem
+            // 
+            this.mÊSToolStripMenuItem.Name = "mÊSToolStripMenuItem";
+            this.mÊSToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.mÊSToolStripMenuItem.Text = "MÊS";
+            this.mÊSToolStripMenuItem.Click += new System.EventHandler(this.mÊSToolStripMenuItem_Click);
+            // 
+            // fUTEBOLToolStripMenuItem
+            // 
+            this.fUTEBOLToolStripMenuItem.Name = "fUTEBOLToolStripMenuItem";
+            this.fUTEBOLToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.fUTEBOLToolStripMenuItem.Text = "FUTEBOL";
+            this.fUTEBOLToolStripMenuItem.Click += new System.EventHandler(this.fUTEBOLToolStripMenuItem_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnAtualizar);
-            this.Controls.Add(this.btnUtilitarios);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnConsultaCli);
-            this.Controls.Add(this.btnCadastroCli);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMenu";
+            this.Text = "Menu";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -121,11 +200,20 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnCadastroCli;
-        private System.Windows.Forms.Button btnConsultaCli;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnUtilitarios;
-        private System.Windows.Forms.Button btnAtualizar;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem cLIENTESToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cADASTRARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem aTUALIZARCADASTROToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cONSULTARToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pRODUTOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem uTILITÁRIOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem cADASTRARPRODUTOSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eDITARCADASTROToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eDITARCADASTROToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fIBONACCIToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fATORIALToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mENOREMAIORToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mÊSToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fUTEBOLToolStripMenuItem;
     }
 }

@@ -42,9 +42,8 @@ namespace BackEndTcm
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            frmMenu menu = new frmMenu();
-            menu.Show();
-            this.Hide();
+            this.Close();
+           
         }
     }
 }

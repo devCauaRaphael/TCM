@@ -19,9 +19,33 @@ namespace BackEndTcm
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-            frmMenu menu = new frmMenu();
-            menu.Show();
-            this.Hide();
+            this.Close();
+        }
+
+        private void btnMostrarMes_Click(object sender, EventArgs e)
+        {
+            int numeroMes;
+
+            // Tenta converter o valor digitado para inteiro
+            bool isNumeroValido = int.TryParse(txtNumeroMes.Text, out numeroMes);
+
+            // Verifica se o número é válido e está entre 1 e 12
+            if (isNumeroValido && numeroMes >= 1 && numeroMes <= 12)
+            {
+                string[] meses = new string[]
+                {
+                    "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho",
+                    "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"
+                };
+
+                // Exibe o mês correspondente ao número no TextBox
+                txtResultado.Text = meses[numeroMes - 1];
+            }
+            else
+            {
+                // Caso o número não seja válido, exibe uma mensagem de erro no TextBox
+                txtResultado.Text = "Por favor, digite um número entre 1 e 12.";
+            }
         }
     }
 }

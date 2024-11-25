@@ -179,6 +179,7 @@
         position: static;
         background-color: transparent;
     }
+    
     .menu ul {
         list-style-type: none;
         margin: 0;
@@ -197,5 +198,11 @@
         padding: 10px 20px;
         border-radius: 4px;
         transition: background-color 0.3s;
+    }
+    .carrossel02{
+        padding: 2vh;
+    }
+    .novosJogos {
+       
     }
 }

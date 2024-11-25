@@ -85,6 +85,9 @@ namespace BackEndTcm
             {
                 MessageBox.Show("Arquivo de cadastro não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            frmMenu menu = new frmMenu();
+            menu.Show();
+            this.Hide();
 
         }
 
@@ -98,8 +101,7 @@ namespace BackEndTcm
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            frmMenu menu = new frmMenu();
-            menu.Show();
+
             this.Close();
         }
     }

@@ -13,7 +13,6 @@ C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackE
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmCadastrarCliente.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmConsultarCliente.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmFatorial.resources
-C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmUtilitarios.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmFibonacci.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmMes.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmFutebol.resources

@@ -63,7 +63,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
             this.Name = "frmFutebol";
-            this.Text = "frmFutebol";
+            this.Text = "x";
             this.ResumeLayout(false);
             this.PerformLayout();
 

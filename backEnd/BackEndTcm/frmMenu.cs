@@ -48,9 +48,7 @@ namespace BackEndTcm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmUtilitarios utilitarios = new frmUtilitarios();
-            utilitarios.Show();
-            this.Hide();
+            
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -63,6 +61,83 @@ namespace BackEndTcm
             frmAtualizar atualizar = new frmAtualizar();
             atualizar.Show();
             this.Hide();
+        }
+
+        private void cONSULTARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultarCliente consCliente = new frmConsultarCliente();
+          
+            consCliente.Show();
+            
+        }
+
+        private void eDITARCADASTROToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cADASTRARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastrarCliente cliente = new frmCadastrarCliente();
+          
+            cliente.Show();
+            
+        }
+
+        private void aTUALIZARCADASTROToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmAtualizar atualizar = new frmAtualizar();
+          
+            atualizar.Show();
+            
+        }
+
+        private void fIBONACCIToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFibonacci fibonacci = new frmFibonacci();
+          
+            fibonacci.Show();
+            
+        }
+
+        private void mÊSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMes mes = new frmMes();
+            mes.Show();
+            
+        }
+
+        private void fUTEBOLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFutebol futebol = new frmFutebol();
+           
+            futebol.Show();
+            
+        }
+
+        private void mENOREMAIORToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmMaiorMenor maiorMenor = new frmMaiorMenor();
+           
+            maiorMenor.Show();
+            
+        }
+
+        private void fATORIALToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmFatorial fatorial = new frmFatorial();
+            fatorial.Show();
+           
+        }
+
+        private void uTILITÁRIOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

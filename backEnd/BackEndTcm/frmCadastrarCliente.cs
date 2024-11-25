@@ -26,7 +26,7 @@ namespace BackEndTcm
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "" && txtNome.Text == "" && txtSenha.Text == "" && txtEmail.Text == "" && mskTelefone.Text == "")
+            if(txtUsuario.Text == "" || txtNome.Text == "" || txtSenha.Text == "" || txtEmail.Text == "" || mskTelefone.Text == "")
             {
                 MessageBox.Show("Dados Invalidos");
             }
@@ -63,8 +63,7 @@ namespace BackEndTcm
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            frmMenu menu = new frmMenu();
-            menu.Show();
+            
             this.Close();
         }
     }
