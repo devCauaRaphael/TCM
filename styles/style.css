@@ -246,6 +246,7 @@ button.prev02, button.next02 {
     font-size: 2rem;
     border-radius: 50%;
     background-color: transparent;
+   
 }
 button.prev01 {
     left: 1vw; /* 1% da largura do viewport */

@@ -54,6 +54,7 @@ const next02 = carrossel02.querySelector(".next02");
 let index02 = 0;
 const totalSlides02 = slides02.children.length;
 
+
 function moveToSlide02(index) {
     // Impede rotação fora dos limites
     if (index < 0) index = totalSlides02 - 1;

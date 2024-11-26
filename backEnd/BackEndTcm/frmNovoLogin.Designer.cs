@@ -152,6 +152,7 @@
             this.Name = "frmNovoLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "novo login";
+            this.Load += new System.EventHandler(this.frmNovoLogin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

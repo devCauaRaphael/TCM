@@ -218,11 +218,19 @@
             // 
             // lblSejaBemVindo
             // 
+            this.lblSejaBemVindo.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
             this.lblSejaBemVindo.AutoSize = true;
-            this.lblSejaBemVindo.Location = new System.Drawing.Point(417, 567);
+            this.lblSejaBemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblSejaBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSejaBemVindo.ForeColor = System.Drawing.Color.Yellow;
+            this.lblSejaBemVindo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblSejaBemVindo.Location = new System.Drawing.Point(56, 603);
             this.lblSejaBemVindo.Name = "lblSejaBemVindo";
-            this.lblSejaBemVindo.Size = new System.Drawing.Size(0, 16);
+            this.lblSejaBemVindo.Size = new System.Drawing.Size(783, 104);
             this.lblSejaBemVindo.TabIndex = 3;
+            this.lblSejaBemVindo.Text = "SEJA BEM VINDO !";
+            this.lblSejaBemVindo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lblSejaBemVindo.UseCompatibleTextRendering = true;
             this.lblSejaBemVindo.Click += new System.EventHandler(this.label1_Click);
             // 
             // timeEfeitoDigitacao
@@ -238,7 +246,7 @@
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(904, 612);
+            this.ClientSize = new System.Drawing.Size(904, 716);
             this.Controls.Add(this.lblSejaBemVindo);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
@@ -274,6 +282,6 @@
         private System.Windows.Forms.ToolStripMenuItem fUTEBOLToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Timer timeEfeitoDigitacao;
-        internal System.Windows.Forms.Label lblSejaBemVindo;
+        private System.Windows.Forms.Label lblSejaBemVindo;
     }
 }

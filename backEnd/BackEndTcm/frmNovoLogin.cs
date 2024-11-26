@@ -53,5 +53,10 @@ namespace BackEndTcm
             login.Show();
             this.Hide();
         }
+
+        private void frmNovoLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
