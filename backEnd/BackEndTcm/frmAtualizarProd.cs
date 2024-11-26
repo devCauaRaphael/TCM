@@ -11,61 +11,53 @@ using System.Windows.Forms;
 
 namespace BackEndTcm
 {
-    public partial class frmAtualizar : Form
+    public partial class frmAtualizarProd : Form
     {
-        string caminho = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\arquivo.txt";
-        public frmAtualizar()
+        string caminhoProd = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\produto.txt";
+        public frmAtualizarProd()
         {
             InitializeComponent();
         }
 
-        private void frmAtualizar_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-
-            string registroAntigo = caminho; // O registro que você quer atualizar
+            string registroAntigo = caminhoProd; // O registro que você quer atualizar
             string usuario = txtUsuario.Text; // O nome de usuário fornecido
             string novoNome = txtNome.Text; // Novo nome fornecido
-            string novoEmail = txtEmail.Text; // Novo email fornecido
-            string novaSenha = txtSenha.Text; // Nova senha fornecida
-            string novoTelefone = mskTelefone.Text; // Novo telefone fornecido
+        
 
-            if (File.Exists(caminho))
+            if (File.Exists(caminhoProd))
             {
                 try
                 {
                     // Lê todas as linhas do arquivo
-                    var linhas = File.ReadAllLines(caminho);
+                    var linhas = File.ReadAllLines(caminhoProd);
 
                     bool registroAtualizado = false;
 
-                  
+
                     for (int i = 0; i < linhas.Length; i++)
                     {
-                       
+
                         string linha = linhas[i];
 
                         // Verifica se o nome de usuário está presente na linha
                         if (linha.Contains(usuario))
                         {
-                       
-                            linhas[i] = $"{usuario} - {novoNome} - {novoEmail} - {novaSenha} - {novoTelefone}";
+
+                            linhas[i] = $"{usuario} - {novoNome}";
 
                             // Marca que o registro foi atualizado
                             registroAtualizado = true;
-                            break; 
+                            break;
                         }
                     }
 
                     // Se o registro foi encontrado e atualizado
                     if (registroAtualizado)
                     {
-                       
-                        File.WriteAllLines(caminho, linhas);
+
+                        File.WriteAllLines(caminhoProd, linhas);
                         MessageBox.Show("Cadastro atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     }
@@ -85,22 +77,18 @@ namespace BackEndTcm
             {
                 MessageBox.Show("Arquivo de cadastro não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
+            
             this.Close();
-
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {
             txtNome.Clear();
-            txtEmail.Clear();
-            txtSenha.Clear();
-            mskTelefone.Clear();
+           txtUsuario.Clear();
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-
             this.Close();
         }
     }

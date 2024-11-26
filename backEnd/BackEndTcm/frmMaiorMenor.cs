@@ -83,5 +83,12 @@ namespace BackEndTcm
                 MessageBox.Show("Ocorreu um erro: " + ex.Message);
             }
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtMaior.Clear();
+            txtMenor.Clear();
+            txtNumeros.Clear();
+        }
     }
 }

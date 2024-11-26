@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -45,7 +46,7 @@
             // btnVoltar
             // 
             this.btnVoltar.ForeColor = System.Drawing.Color.Red;
-            this.btnVoltar.Location = new System.Drawing.Point(592, 384);
+            this.btnVoltar.Location = new System.Drawing.Point(473, 384);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(83, 30);
             this.btnVoltar.TabIndex = 1;
@@ -53,12 +54,24 @@
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(263, 384);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(83, 30);
+            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            // 
             // frmFutebol
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.White;
@@ -73,5 +86,6 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

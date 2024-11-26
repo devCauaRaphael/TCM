@@ -34,6 +34,7 @@
             this.btnCalcular = new System.Windows.Forms.Button();
             this.txtMenor = new System.Windows.Forms.TextBox();
             this.txtMaior = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             // btnVoltar
             // 
             this.btnVoltar.ForeColor = System.Drawing.Color.Red;
-            this.btnVoltar.Location = new System.Drawing.Point(561, 368);
+            this.btnVoltar.Location = new System.Drawing.Point(475, 368);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(83, 30);
             this.btnVoltar.TabIndex = 2;
@@ -90,12 +91,25 @@
             this.txtMaior.Size = new System.Drawing.Size(100, 22);
             this.txtMaior.TabIndex = 5;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(312, 368);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(83, 30);
+            this.btnLimpar.TabIndex = 6;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // frmMaiorMenor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.txtMaior);
             this.Controls.Add(this.txtMenor);
             this.Controls.Add(this.btnCalcular);
@@ -120,5 +134,6 @@
         private System.Windows.Forms.Button btnCalcular;
         private System.Windows.Forms.TextBox txtMenor;
         private System.Windows.Forms.TextBox txtMaior;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

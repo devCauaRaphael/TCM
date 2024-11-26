@@ -48,5 +48,11 @@ namespace BackEndTcm
         {
            this.Close();
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtDigito.Clear();
+            txtResultado.Clear();
+        }
     }
 }

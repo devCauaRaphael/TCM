@@ -69,13 +69,13 @@
             // 
             // cLIENTESToolStripMenuItem
             // 
-            this.cLIENTESToolStripMenuItem.BackColor = System.Drawing.Color.Navy;
+            this.cLIENTESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTRARToolStripMenuItem,
             this.aTUALIZARCADASTROToolStripMenuItem,
             this.cONSULTARToolStripMenuItem});
             this.cLIENTESToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cLIENTESToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.cLIENTESToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.cLIENTESToolStripMenuItem.Name = "cLIENTESToolStripMenuItem";
             this.cLIENTESToolStripMenuItem.Size = new System.Drawing.Size(127, 33);
             this.cLIENTESToolStripMenuItem.Text = "CLIENTES";
@@ -83,6 +83,7 @@
             // 
             // cADASTRARToolStripMenuItem
             // 
+            this.cADASTRARToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.cADASTRARToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cADASTRARToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cADASTRARToolStripMenuItem.Image")));
             this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
@@ -92,6 +93,7 @@
             // 
             // aTUALIZARCADASTROToolStripMenuItem
             // 
+            this.aTUALIZARCADASTROToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.aTUALIZARCADASTROToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aTUALIZARCADASTROToolStripMenuItem.Image")));
             this.aTUALIZARCADASTROToolStripMenuItem.Name = "aTUALIZARCADASTROToolStripMenuItem";
             this.aTUALIZARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(352, 34);
@@ -100,6 +102,7 @@
             // 
             // cONSULTARToolStripMenuItem
             // 
+            this.cONSULTARToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.cONSULTARToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cONSULTARToolStripMenuItem.Image")));
             this.cONSULTARToolStripMenuItem.Name = "cONSULTARToolStripMenuItem";
             this.cONSULTARToolStripMenuItem.Size = new System.Drawing.Size(352, 34);
@@ -108,25 +111,29 @@
             // 
             // pRODUTOSToolStripMenuItem
             // 
+            this.pRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pRODUTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTRARPRODUTOSToolStripMenuItem,
             this.eDITARCADASTROToolStripMenuItem,
             this.CONSULTARCADASTRO});
             this.pRODUTOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pRODUTOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.pRODUTOSToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.pRODUTOSToolStripMenuItem.Name = "pRODUTOSToolStripMenuItem";
             this.pRODUTOSToolStripMenuItem.Size = new System.Drawing.Size(151, 33);
             this.pRODUTOSToolStripMenuItem.Text = "PRODUTOS";
             // 
             // cADASTRARPRODUTOSToolStripMenuItem
             // 
+            this.cADASTRARPRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.cADASTRARPRODUTOSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cADASTRARPRODUTOSToolStripMenuItem.Image")));
             this.cADASTRARPRODUTOSToolStripMenuItem.Name = "cADASTRARPRODUTOSToolStripMenuItem";
             this.cADASTRARPRODUTOSToolStripMenuItem.Size = new System.Drawing.Size(360, 34);
             this.cADASTRARPRODUTOSToolStripMenuItem.Text = "CADASTRAR PRODUTOS";
+            this.cADASTRARPRODUTOSToolStripMenuItem.Click += new System.EventHandler(this.cADASTRARPRODUTOSToolStripMenuItem_Click);
             // 
             // eDITARCADASTROToolStripMenuItem
             // 
+            this.eDITARCADASTROToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.eDITARCADASTROToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eDITARCADASTROToolStripMenuItem.Image")));
             this.eDITARCADASTROToolStripMenuItem.Name = "eDITARCADASTROToolStripMenuItem";
             this.eDITARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(360, 34);
@@ -135,13 +142,16 @@
             // 
             // CONSULTARCADASTRO
             // 
+            this.CONSULTARCADASTRO.BackColor = System.Drawing.Color.Yellow;
             this.CONSULTARCADASTRO.Image = ((System.Drawing.Image)(resources.GetObject("CONSULTARCADASTRO.Image")));
             this.CONSULTARCADASTRO.Name = "CONSULTARCADASTRO";
             this.CONSULTARCADASTRO.Size = new System.Drawing.Size(360, 34);
             this.CONSULTARCADASTRO.Text = "CONSULTAR CADASTRO";
+            this.CONSULTARCADASTRO.Click += new System.EventHandler(this.CONSULTARCADASTRO_Click);
             // 
             // uTILITÁRIOSToolStripMenuItem
             // 
+            this.uTILITÁRIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.uTILITÁRIOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fIBONACCIToolStripMenuItem,
             this.fATORIALToolStripMenuItem,
@@ -149,7 +159,7 @@
             this.mÊSToolStripMenuItem,
             this.fUTEBOLToolStripMenuItem});
             this.uTILITÁRIOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uTILITÁRIOSToolStripMenuItem.ForeColor = System.Drawing.Color.White;
+            this.uTILITÁRIOSToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
             this.uTILITÁRIOSToolStripMenuItem.Name = "uTILITÁRIOSToolStripMenuItem";
             this.uTILITÁRIOSToolStripMenuItem.Size = new System.Drawing.Size(166, 33);
             this.uTILITÁRIOSToolStripMenuItem.Text = "UTILITÁRIOS";
@@ -157,7 +167,7 @@
             // 
             // fIBONACCIToolStripMenuItem
             // 
-            this.fIBONACCIToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.fIBONACCIToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.fIBONACCIToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fIBONACCIToolStripMenuItem.Image")));
             this.fIBONACCIToolStripMenuItem.Name = "fIBONACCIToolStripMenuItem";
             this.fIBONACCIToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -166,7 +176,7 @@
             // 
             // fATORIALToolStripMenuItem
             // 
-            this.fATORIALToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.fATORIALToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.fATORIALToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fATORIALToolStripMenuItem.Image")));
             this.fATORIALToolStripMenuItem.Name = "fATORIALToolStripMenuItem";
             this.fATORIALToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -175,7 +185,7 @@
             // 
             // mENOREMAIORToolStripMenuItem
             // 
-            this.mENOREMAIORToolStripMenuItem.BackColor = System.Drawing.Color.White;
+            this.mENOREMAIORToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.mENOREMAIORToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mENOREMAIORToolStripMenuItem.Image")));
             this.mENOREMAIORToolStripMenuItem.Name = "mENOREMAIORToolStripMenuItem";
             this.mENOREMAIORToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -184,6 +194,7 @@
             // 
             // mÊSToolStripMenuItem
             // 
+            this.mÊSToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.mÊSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mÊSToolStripMenuItem.Image")));
             this.mÊSToolStripMenuItem.Name = "mÊSToolStripMenuItem";
             this.mÊSToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -192,6 +203,7 @@
             // 
             // fUTEBOLToolStripMenuItem
             // 
+            this.fUTEBOLToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
             this.fUTEBOLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fUTEBOLToolStripMenuItem.Image")));
             this.fUTEBOLToolStripMenuItem.Name = "fUTEBOLToolStripMenuItem";
             this.fUTEBOLToolStripMenuItem.Size = new System.Drawing.Size(276, 34);

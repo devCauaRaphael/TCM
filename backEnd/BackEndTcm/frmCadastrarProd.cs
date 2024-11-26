@@ -11,44 +11,35 @@ using System.Windows.Forms;
 
 namespace BackEndTcm
 {
-    public partial class frmCadastrarCliente : Form
+    public partial class frmCadastrarProd : Form
     {
-        string caminho = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\arquivo.txt";
-        public frmCadastrarCliente()
+        string caminhoProd = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\produto.txt";
+        public frmCadastrarProd()
         {
             InitializeComponent();
         }
 
-        private void frmCadastrarCliente_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            if(txtUsuario.Text == "" || txtNome.Text == "" || txtSenha.Text == "" || txtEmail.Text == "" || mskTelefone.Text == "")
+            if (txtUsuario.Text == "" || txtNome.Text == "" )
             {
                 MessageBox.Show("Dados Invalidos");
             }
             else
             {
-                StreamWriter sw = new StreamWriter(caminho, true);
+                StreamWriter sw = new StreamWriter(caminhoProd, true);
                 sw.WriteLine(txtUsuario.Text);
                 sw.WriteLine(txtNome.Text);
-                sw.WriteLine(txtEmail.Text);
-                sw.WriteLine(txtSenha.Text);
-                sw.WriteLine(mskTelefone.Text);
+
                 sw.WriteLine("----------------------------------------");
                 MessageBox.Show("Cadastro realizado com sucesso!");
 
                 sw.Close();
                 txtUsuario.Clear();
                 txtNome.Clear();
-                txtEmail.Clear();
-                txtSenha.Clear();
-                mskTelefone.Clear();
-                
                
+
+            
                 this.Close();
             }
         }
@@ -57,14 +48,11 @@ namespace BackEndTcm
         {
             txtUsuario.Clear();
             txtNome.Clear();
-            txtEmail.Clear();
-            txtSenha.Clear();
-            mskTelefone.Clear();
+          
         }
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            
             this.Close();
         }
     }

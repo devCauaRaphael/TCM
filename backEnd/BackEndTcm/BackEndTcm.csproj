@@ -52,17 +52,35 @@
     <Compile Include="frmAtualizar.Designer.cs">
       <DependentUpon>frmAtualizar.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAtualizarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAtualizarProd.Designer.cs">
+      <DependentUpon>frmAtualizarProd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCadastrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmCadastrarCliente.Designer.cs">
       <DependentUpon>frmCadastrarCliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmCadastrarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCadastrarProd.Designer.cs">
+      <DependentUpon>frmCadastrarProd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConsultarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmConsultarCliente.Designer.cs">
       <DependentUpon>frmConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsultarProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsultarProd.Designer.cs">
+      <DependentUpon>frmConsultarProd.cs</DependentUpon>
     </Compile>
     <Compile Include="frmFatorial.cs">
       <SubType>Form</SubType>
@@ -106,6 +124,12 @@
     <Compile Include="frmMes.Designer.cs">
       <DependentUpon>frmMes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNovoLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNovoLogin.Designer.cs">
+      <DependentUpon>frmNovoLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -117,11 +141,20 @@
     <EmbeddedResource Include="frmAtualizar.resx">
       <DependentUpon>frmAtualizar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmAtualizarProd.resx">
+      <DependentUpon>frmAtualizarProd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrarCliente.resx">
       <DependentUpon>frmCadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmCadastrarProd.resx">
+      <DependentUpon>frmCadastrarProd.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmConsultarCliente.resx">
       <DependentUpon>frmConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConsultarProd.resx">
+      <DependentUpon>frmConsultarProd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFatorial.resx">
       <DependentUpon>frmFatorial.cs</DependentUpon>
@@ -143,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmMes.resx">
       <DependentUpon>frmMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNovoLogin.resx">
+      <DependentUpon>frmNovoLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmSplash.resx">
       <DependentUpon>frmSplash.cs</DependentUpon>

@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnMostrarMes = new System.Windows.Forms.Button();
             this.txtResultado = new System.Windows.Forms.TextBox();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -49,7 +50,7 @@
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.Red;
-            this.btnVoltar.Location = new System.Drawing.Point(618, 372);
+            this.btnVoltar.Location = new System.Drawing.Point(394, 372);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(83, 30);
             this.btnVoltar.TabIndex = 3;
@@ -92,12 +93,25 @@
             this.txtResultado.Size = new System.Drawing.Size(171, 34);
             this.txtResultado.TabIndex = 2;
             // 
+            // btnLimpar
+            // 
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.ForeColor = System.Drawing.Color.Black;
+            this.btnLimpar.Location = new System.Drawing.Point(240, 372);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(83, 30);
+            this.btnLimpar.TabIndex = 6;
+            this.btnLimpar.Text = "LIMPAR";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
             // frmMes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnMostrarMes);
             this.Controls.Add(this.label2);
@@ -123,5 +137,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnMostrarMes;
         private System.Windows.Forms.TextBox txtResultado;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

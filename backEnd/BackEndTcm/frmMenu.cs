@@ -73,7 +73,8 @@ namespace BackEndTcm
 
         private void eDITARCADASTROToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmAtualizarProd atualizarProd = new frmAtualizarProd();
+            atualizarProd.Show();
         }
 
         private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
@@ -158,7 +159,7 @@ namespace BackEndTcm
         private void timeEfeitoDigitacao_Tick(object sender, EventArgs e)
         {
              string mensagem = "Seja bem-vindo";
-        
+       
     
             if (index < mensagem.Length) {
 
@@ -169,6 +170,18 @@ namespace BackEndTcm
             {
                 timeEfeitoDigitacao.Stop();
             }
+        }
+
+        private void cADASTRARPRODUTOSToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCadastrarProd cadastrarProd = new frmCadastrarProd();
+            cadastrarProd.Show();
+        }
+
+        private void CONSULTARCADASTRO_Click(object sender, EventArgs e)
+        {
+            frmConsultarProd consultarProd = new frmConsultarProd();
+            consultarProd.Show();
         }
     }
 }

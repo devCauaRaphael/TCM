@@ -47,5 +47,12 @@ namespace BackEndTcm
                 txtResultado.Text = "Por favor, digite um número entre 1 e 12.";
             }
         }
+
+        private void btnLimpar_Click(object sender, EventArgs e)
+        {
+            txtNumeroMes.Clear();
+            txtResultado.Clear();
+           
+        }
     }
 }
