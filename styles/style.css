@@ -16,10 +16,7 @@ body.temaEscuro{
     --corHover: #007bff;
 }
 body.temaClaro{
-
     --corFundo: #f3f3f3;
-
-
 }
 
 
@@ -148,7 +145,7 @@ img:hover{
     position: relative;
     max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
     height: 60vh; /* Altura do carrossel em relação ao viewport */
-    margin: 5vh auto; /* Margem superior em relação ao viewport */
+    margin: 1vh auto; /* Margem superior em relação ao viewport */
     overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
     border-radius: 1rem;
 }  
@@ -227,7 +224,6 @@ button.prev01, button.next01 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* vale apena usar para rgb quando tiver limite de transparencia */
     border: none;
     padding: 1rem;
     cursor: pointer;
@@ -239,7 +235,6 @@ button.prev02, button.next02 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    /* vale apena usar para rgb quando tiver limite de transparencia */
     border: none;
     padding: 1rem;
     cursor: pointer;
