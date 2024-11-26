@@ -154,7 +154,7 @@ img:hover{
     position: relative;
     max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
     height: 60vh; /* Altura do carrossel em relação ao viewport */
-    margin: 5vh auto; /* Margem superior em relação ao viewport */
+    margin: 1vh auto; /* Margem superior em relação ao viewport */
     overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
     border-radius: 1rem;
 }
@@ -209,7 +209,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     font-size: 1rem; /* Tamanho do texto dos slides */
-    flex-direction: column;
+    flex-direction: column; 
 }
 .slide02 p{
     color:var(--corFonte);

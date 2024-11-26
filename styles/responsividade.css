@@ -200,9 +200,6 @@
         border-radius: 4px;
         transition: background-color 0.3s;
     }
-    .carrossel02{
-        padding: 2vh;
-    }
     .slide01 img{
         width:  140px;
         height: auto; 

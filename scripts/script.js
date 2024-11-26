@@ -45,6 +45,12 @@ next01.addEventListener("click", () => {
 // Inicializa o carrossel
 moveToSlide01(index01);
 
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    // código do carrossel02 aqui
+  });
 // Carrossel 2
 const carrossel02 = document.querySelector(".carrossel02");
 const slides02 = carrossel02.querySelector(".slides02");
