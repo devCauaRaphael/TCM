@@ -169,6 +169,40 @@
     .Sobre p{
         font-size: 1.2rem ;
     }
+    footer {
+        background-color: var(--footerHeader);
+        color: var(--corFonte);
+        padding: 5px 0;
+        text-align: center;
+        font-size: 10px;
+      }
+      
+      .containerFooter {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0 10px;
+      }
+      
+      .logoFooter img {
+        max-width: 100px;
+        margin-bottom: 5px;
+      }
+      
+      .redes {
+        margin: 4px 0;
+      }
+      
+      .redes img {
+        width: 24px;
+        margin: 0 5px;
+        transition: transform 0.3s ease;
+      }
+      
+      footer p {
+        margin-top: 10px;
+        font-size: 8px;
+        line-height: 1.2;
+      }
 }
 @media(min-width: 602px){
     .menuHamburguer{
@@ -203,14 +237,14 @@
     .slide01 img, .slide02 img{
         width:  8vw;
         height: auto; 
-        margin: 7em;
+        margin: 3em;
         
     }
 
 .slide03 img{
     width:  8vw;
     height: auto; 
-    margin: 7em;
+    margin: 3em;
 }
 button.prev01,
 button.prev02,

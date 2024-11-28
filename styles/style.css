@@ -394,7 +394,7 @@
   }
   
   .logoFooter img {
-    max-width: 100px;
+    max-width: 4vw;
     margin-bottom: 5px;
   }
   
@@ -403,7 +403,8 @@
   }
   
   .redes img {
-    width: 24px;
+    width: 5vw;
+    height: auto;
     margin: 0 5px;
     transition: transform 0.3s ease;
   }
@@ -412,4 +413,5 @@
     margin-top: 10px;
     font-size: 8px;
     line-height: 1.2;
+    font-size: 1.5rem;
   }

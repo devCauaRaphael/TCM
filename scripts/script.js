@@ -105,3 +105,33 @@ next03.addEventListener("click", () => {
     moveToSlide03(index03 + 1);
 });
 moveToSlide03(index03);
+const carrosselDivulgacao = document.querySelector('.carrosselDivulgacao');
+const slidesDivulgacao = carrosselDivulgacao.querySelector('.slidesDivulgacao');
+const imagens = slidesDivulgacao.querySelectorAll('.slideDivulgacao');
+
+
+let indice = 0;
+
+// Declara a variável tempo e atribui-lhe o valor 5000 (5 segundos)
+let tempo = 5000; // 5 segundos
+
+// Declara a função alterarImagem, que será usada para alterar a imagem ativa
+function alterarImagem() {
+  // Define a opacidade da imagem atual como 0, tornando-a invisível
+  imagens[indice].style.opacity = 0;
+
+  // Incrementa a variável indice em 1, preparando-a para a próxima imagem
+  indice++;
+
+  // Verifica se o indice é maior ou igual ao número de imagens
+  if (indice >= imagens.length) {
+    // Se sim, redefine o indice para 0, preparando-o para a primeira imagem novamente
+    indice = 0;
+  }
+
+  // Define a opacidade da próxima imagem como 1, tornando-a visível
+  imagens[indice].style.opacity = 1;
+}
+
+// Chama a função alterarImagem a cada 5 segundos
+setInterval(alterarImagem, tempo);
