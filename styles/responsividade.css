@@ -3,11 +3,24 @@
     padding: 0;
     margin: 0;
   }
+  body.temaEscuro {
+    --corFundo: #1b004b;
+    --corFonte: #f3f3f3;
+    --coresFundo01: #333;
+    --coresFundo02: #5dc1b9;
+    --corFundo03: #add8e6;
+    --footerHeader: #00008b;
+    --corHover: #007bff;
+  }
+  body.temaClaro {
+    --corFundo: #f3f3f3;
+    --coresFundo02: #8282df;
+  }
   header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #00008b;
+    background-color:var(--footerHeader);
     box-sizing: border-box;
   }
   /*estilização menu hamburguer*/
@@ -26,7 +39,7 @@
   .logo img {
     width: 50px;
     height: auto;
-    background-color: #1b004b;
+    background-color: var(--corFundo);
     margin-right: 10px;
     border-radius: 50%;
   }
@@ -40,7 +53,7 @@
     top: 50px;
     left: 0;
     width: 30%;
-    background-color: #444;
+    background-color: var(--coresFundo01);
   }
 
   /*estilização carrosseis*/
@@ -96,18 +109,29 @@
 
 
   /*estilizacão do sobre nós*/
+  .sobreNos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 3em;
+  }
   .Sobre {
-    display: block;
-    color: #333;
-    background-color: #5dc1b9;
-    border-radius: 1em;
+    text-align: center;
+    color: var(--coresFundo01);
+    background-color: var(--coresFundo02);
+    border-radius: 3em;
+    margin: 1vh;
+  
+    flex-direction: column;
   }
   .Sobre h1 {
     text-align: center;
-    border: 0.5px solid #add8e6;
+    border: 0.5px solid var(--corFundo03);
     border-radius: 2em;
-    background-color: #add8e6;
+    background-color: var(--corFundo03);
     margin: 5vh;
+    margin: 1em 18vw 1em 18vw;
   }
   .Sobre p {
     font-size: 1.2rem;
@@ -146,6 +170,9 @@
     font-size: 8px;
     line-height: 1.2;
   }
+  .carrosselDivulgacao{
+    display: none;
+  }
 }
 @media (min-width: 602px) {
   .menuHamburguer {
@@ -168,7 +195,7 @@
     margin: 0 20px;
   }
   .menu ul li a {
-    color: #fff;
+    color: var(--corFonte);
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
