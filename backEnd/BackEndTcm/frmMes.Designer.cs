@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMes));
             this.label1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.txtNumeroMes = new System.Windows.Forms.TextBox();
@@ -40,9 +41,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(259, 19);
+            this.label1.Location = new System.Drawing.Point(291, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 29);
+            this.label1.Size = new System.Drawing.Size(162, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Descubra o mês";
             // 
@@ -50,7 +51,7 @@
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.ForeColor = System.Drawing.Color.Red;
-            this.btnVoltar.Location = new System.Drawing.Point(394, 372);
+            this.btnVoltar.Location = new System.Drawing.Point(426, 370);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(83, 30);
             this.btnVoltar.TabIndex = 3;
@@ -60,17 +61,17 @@
             // 
             // txtNumeroMes
             // 
-            this.txtNumeroMes.Location = new System.Drawing.Point(264, 163);
+            this.txtNumeroMes.Location = new System.Drawing.Point(296, 161);
             this.txtNumeroMes.Name = "txtNumeroMes";
-            this.txtNumeroMes.Size = new System.Drawing.Size(171, 34);
+            this.txtNumeroMes.Size = new System.Drawing.Size(171, 28);
             this.txtNumeroMes.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 118);
+            this.label2.Location = new System.Drawing.Point(196, 116);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(361, 29);
+            this.label2.Size = new System.Drawing.Size(291, 24);
             this.label2.TabIndex = 5;
             this.label2.Text = "digite um número entre 1 e 12";
             // 
@@ -78,7 +79,7 @@
             // 
             this.btnMostrarMes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMostrarMes.ForeColor = System.Drawing.Color.Black;
-            this.btnMostrarMes.Location = new System.Drawing.Point(306, 203);
+            this.btnMostrarMes.Location = new System.Drawing.Point(338, 201);
             this.btnMostrarMes.Name = "btnMostrarMes";
             this.btnMostrarMes.Size = new System.Drawing.Size(81, 43);
             this.btnMostrarMes.TabIndex = 1;
@@ -88,16 +89,16 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(264, 252);
+            this.txtResultado.Location = new System.Drawing.Point(296, 250);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(171, 34);
+            this.txtResultado.Size = new System.Drawing.Size(171, 28);
             this.txtResultado.TabIndex = 2;
             // 
             // btnLimpar
             // 
             this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpar.ForeColor = System.Drawing.Color.Black;
-            this.btnLimpar.Location = new System.Drawing.Point(240, 372);
+            this.btnLimpar.Location = new System.Drawing.Point(272, 370);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(83, 30);
             this.btnLimpar.TabIndex = 6;
@@ -107,10 +108,11 @@
             // 
             // frmMes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::BackEndTcm.Properties.Resources.Leonardo_Phoenix_Create_an_illustrative_background_image_for_a_1;
+            this.ClientSize = new System.Drawing.Size(802, 458);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.txtResultado);
             this.Controls.Add(this.btnMostrarMes);
@@ -120,10 +122,11 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "frmMes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmMes";
+            this.Text = "Explore o Mês";
             this.ResumeLayout(false);
             this.PerformLayout();
 

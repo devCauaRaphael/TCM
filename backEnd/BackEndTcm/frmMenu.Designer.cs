@@ -37,7 +37,6 @@
             this.cONSULTARToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pRODUTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cADASTRARPRODUTOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.eDITARCADASTROToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CONSULTARCADASTRO = new System.Windows.Forms.ToolStripMenuItem();
             this.uTILITÁRIOSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fIBONACCIToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -46,8 +45,8 @@
             this.mÊSToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fUTEBOLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.lblSejaBemVindo = new System.Windows.Forms.Label();
             this.timeEfeitoDigitacao = new System.Windows.Forms.Timer(this.components);
+            this.btnVoltar = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,16 +59,19 @@
             this.cLIENTESToolStripMenuItem,
             this.pRODUTOSToolStripMenuItem,
             this.uTILITÁRIOSToolStripMenuItem});
+            this.menuStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow;
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.MdiWindowListItem = this.cLIENTESToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(904, 37);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(2272, 37);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // cLIENTESToolStripMenuItem
             // 
-            this.cLIENTESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cLIENTESToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.cLIENTESToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTRARToolStripMenuItem,
             this.aTUALIZARCADASTROToolStripMenuItem,
@@ -83,7 +85,7 @@
             // 
             // cADASTRARToolStripMenuItem
             // 
-            this.cADASTRARToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.cADASTRARToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.cADASTRARToolStripMenuItem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.cADASTRARToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cADASTRARToolStripMenuItem.Image")));
             this.cADASTRARToolStripMenuItem.Name = "cADASTRARToolStripMenuItem";
@@ -93,7 +95,7 @@
             // 
             // aTUALIZARCADASTROToolStripMenuItem
             // 
-            this.aTUALIZARCADASTROToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.aTUALIZARCADASTROToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.aTUALIZARCADASTROToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("aTUALIZARCADASTROToolStripMenuItem.Image")));
             this.aTUALIZARCADASTROToolStripMenuItem.Name = "aTUALIZARCADASTROToolStripMenuItem";
             this.aTUALIZARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(352, 34);
@@ -102,7 +104,7 @@
             // 
             // cONSULTARToolStripMenuItem
             // 
-            this.cONSULTARToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.cONSULTARToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.cONSULTARToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cONSULTARToolStripMenuItem.Image")));
             this.cONSULTARToolStripMenuItem.Name = "cONSULTARToolStripMenuItem";
             this.cONSULTARToolStripMenuItem.Size = new System.Drawing.Size(352, 34);
@@ -111,10 +113,9 @@
             // 
             // pRODUTOSToolStripMenuItem
             // 
-            this.pRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.pRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.pRODUTOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cADASTRARPRODUTOSToolStripMenuItem,
-            this.eDITARCADASTROToolStripMenuItem,
             this.CONSULTARCADASTRO});
             this.pRODUTOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pRODUTOSToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
@@ -124,34 +125,25 @@
             // 
             // cADASTRARPRODUTOSToolStripMenuItem
             // 
-            this.cADASTRARPRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.cADASTRARPRODUTOSToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.cADASTRARPRODUTOSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("cADASTRARPRODUTOSToolStripMenuItem.Image")));
             this.cADASTRARPRODUTOSToolStripMenuItem.Name = "cADASTRARPRODUTOSToolStripMenuItem";
             this.cADASTRARPRODUTOSToolStripMenuItem.Size = new System.Drawing.Size(360, 34);
             this.cADASTRARPRODUTOSToolStripMenuItem.Text = "CADASTRAR PRODUTOS";
             this.cADASTRARPRODUTOSToolStripMenuItem.Click += new System.EventHandler(this.cADASTRARPRODUTOSToolStripMenuItem_Click);
             // 
-            // eDITARCADASTROToolStripMenuItem
-            // 
-            this.eDITARCADASTROToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
-            this.eDITARCADASTROToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eDITARCADASTROToolStripMenuItem.Image")));
-            this.eDITARCADASTROToolStripMenuItem.Name = "eDITARCADASTROToolStripMenuItem";
-            this.eDITARCADASTROToolStripMenuItem.Size = new System.Drawing.Size(360, 34);
-            this.eDITARCADASTROToolStripMenuItem.Text = "EDITAR CADASTRO";
-            this.eDITARCADASTROToolStripMenuItem.Click += new System.EventHandler(this.eDITARCADASTROToolStripMenuItem_Click);
-            // 
             // CONSULTARCADASTRO
             // 
-            this.CONSULTARCADASTRO.BackColor = System.Drawing.Color.Yellow;
+            this.CONSULTARCADASTRO.BackColor = System.Drawing.Color.LightSkyBlue;
             this.CONSULTARCADASTRO.Image = ((System.Drawing.Image)(resources.GetObject("CONSULTARCADASTRO.Image")));
             this.CONSULTARCADASTRO.Name = "CONSULTARCADASTRO";
             this.CONSULTARCADASTRO.Size = new System.Drawing.Size(360, 34);
-            this.CONSULTARCADASTRO.Text = "CONSULTAR CADASTRO";
+            this.CONSULTARCADASTRO.Text = "CONSULTAR PRODUTO";
             this.CONSULTARCADASTRO.Click += new System.EventHandler(this.CONSULTARCADASTRO_Click);
             // 
             // uTILITÁRIOSToolStripMenuItem
             // 
-            this.uTILITÁRIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.uTILITÁRIOSToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.uTILITÁRIOSToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fIBONACCIToolStripMenuItem,
             this.fATORIALToolStripMenuItem,
@@ -160,6 +152,7 @@
             this.fUTEBOLToolStripMenuItem});
             this.uTILITÁRIOSToolStripMenuItem.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uTILITÁRIOSToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.uTILITÁRIOSToolStripMenuItem.ImageAlign = System.Drawing.ContentAlignment.TopRight;
             this.uTILITÁRIOSToolStripMenuItem.Name = "uTILITÁRIOSToolStripMenuItem";
             this.uTILITÁRIOSToolStripMenuItem.Size = new System.Drawing.Size(166, 33);
             this.uTILITÁRIOSToolStripMenuItem.Text = "UTILITÁRIOS";
@@ -167,7 +160,7 @@
             // 
             // fIBONACCIToolStripMenuItem
             // 
-            this.fIBONACCIToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.fIBONACCIToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.fIBONACCIToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fIBONACCIToolStripMenuItem.Image")));
             this.fIBONACCIToolStripMenuItem.Name = "fIBONACCIToolStripMenuItem";
             this.fIBONACCIToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -176,7 +169,7 @@
             // 
             // fATORIALToolStripMenuItem
             // 
-            this.fATORIALToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.fATORIALToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.fATORIALToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fATORIALToolStripMenuItem.Image")));
             this.fATORIALToolStripMenuItem.Name = "fATORIALToolStripMenuItem";
             this.fATORIALToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -185,7 +178,7 @@
             // 
             // mENOREMAIORToolStripMenuItem
             // 
-            this.mENOREMAIORToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.mENOREMAIORToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.mENOREMAIORToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mENOREMAIORToolStripMenuItem.Image")));
             this.mENOREMAIORToolStripMenuItem.Name = "mENOREMAIORToolStripMenuItem";
             this.mENOREMAIORToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -194,7 +187,7 @@
             // 
             // mÊSToolStripMenuItem
             // 
-            this.mÊSToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.mÊSToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.mÊSToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("mÊSToolStripMenuItem.Image")));
             this.mÊSToolStripMenuItem.Name = "mÊSToolStripMenuItem";
             this.mÊSToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -203,7 +196,7 @@
             // 
             // fUTEBOLToolStripMenuItem
             // 
-            this.fUTEBOLToolStripMenuItem.BackColor = System.Drawing.Color.Yellow;
+            this.fUTEBOLToolStripMenuItem.BackColor = System.Drawing.Color.LightSkyBlue;
             this.fUTEBOLToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("fUTEBOLToolStripMenuItem.Image")));
             this.fUTEBOLToolStripMenuItem.Name = "fUTEBOLToolStripMenuItem";
             this.fUTEBOLToolStripMenuItem.Size = new System.Drawing.Size(276, 34);
@@ -216,41 +209,39 @@
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
-            // lblSejaBemVindo
-            // 
-            this.lblSejaBemVindo.AccessibleRole = System.Windows.Forms.AccessibleRole.Graphic;
-            this.lblSejaBemVindo.AutoSize = true;
-            this.lblSejaBemVindo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.lblSejaBemVindo.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSejaBemVindo.ForeColor = System.Drawing.Color.Yellow;
-            this.lblSejaBemVindo.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblSejaBemVindo.Location = new System.Drawing.Point(56, 603);
-            this.lblSejaBemVindo.Name = "lblSejaBemVindo";
-            this.lblSejaBemVindo.Size = new System.Drawing.Size(783, 104);
-            this.lblSejaBemVindo.TabIndex = 3;
-            this.lblSejaBemVindo.Text = "SEJA BEM VINDO !";
-            this.lblSejaBemVindo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lblSejaBemVindo.UseCompatibleTextRendering = true;
-            this.lblSejaBemVindo.Click += new System.EventHandler(this.label1_Click);
-            // 
             // timeEfeitoDigitacao
             // 
             this.timeEfeitoDigitacao.Enabled = true;
             this.timeEfeitoDigitacao.Tick += new System.EventHandler(this.timeEfeitoDigitacao_Tick);
+            // 
+            // btnVoltar
+            // 
+            this.btnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btnVoltar.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(600, 0);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(113, 37);
+            this.btnVoltar.TabIndex = 2;
+            this.btnVoltar.Text = "VOLTAR";
+            this.btnVoltar.UseVisualStyleBackColor = false;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // frmMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(904, 716);
-            this.Controls.Add(this.lblSejaBemVindo);
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackgroundImage = global::BackEndTcm.Properties.Resources.Design_sem_nome__9_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(2272, 716);
+            this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -273,7 +264,6 @@
         private System.Windows.Forms.ToolStripMenuItem pRODUTOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uTILITÁRIOSToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cADASTRARPRODUTOSToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem eDITARCADASTROToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CONSULTARCADASTRO;
         private System.Windows.Forms.ToolStripMenuItem fIBONACCIToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem fATORIALToolStripMenuItem;
@@ -282,6 +272,6 @@
         private System.Windows.Forms.ToolStripMenuItem fUTEBOLToolStripMenuItem;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.Timer timeEfeitoDigitacao;
-        private System.Windows.Forms.Label lblSejaBemVindo;
+        private System.Windows.Forms.Button btnVoltar;
     }
 }

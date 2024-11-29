@@ -27,6 +27,8 @@ namespace BackEndTcm
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
 
+            // O caminho do arquivo de cadastro
+
             string registroAntigo = caminho; // O registro que você quer atualizar
             string usuario = txtUsuario.Text; // O nome de usuário fornecido
             string novoNome = txtNome.Text; // Novo nome fornecido
@@ -34,7 +36,15 @@ namespace BackEndTcm
             string novaSenha = txtSenha.Text; // Nova senha fornecida
             string novoTelefone = mskTelefone.Text; // Novo telefone fornecido
 
-            if (File.Exists(caminho))
+            if (string.IsNullOrWhiteSpace(usuario) ||
+     string.IsNullOrWhiteSpace(novoNome) ||
+     string.IsNullOrWhiteSpace(novoEmail) ||
+     string.IsNullOrWhiteSpace(novaSenha) ||
+     string.IsNullOrWhiteSpace(novoTelefone))
+            {
+                MessageBox.Show("Por favor, preencha todas as informações antes de atualizar.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (File.Exists(caminho))
             {
                 try
                 {
@@ -43,31 +53,26 @@ namespace BackEndTcm
 
                     bool registroAtualizado = false;
 
-                  
                     for (int i = 0; i < linhas.Length; i++)
                     {
-                       
                         string linha = linhas[i];
 
                         // Verifica se o nome de usuário está presente na linha
                         if (linha.Contains(usuario))
                         {
-                       
                             linhas[i] = $"{usuario} - {novoNome} - {novoEmail} - {novaSenha} - {novoTelefone}";
 
                             // Marca que o registro foi atualizado
                             registroAtualizado = true;
-                            break; 
+                            break;
                         }
                     }
 
                     // Se o registro foi encontrado e atualizado
                     if (registroAtualizado)
                     {
-                       
                         File.WriteAllLines(caminho, linhas);
                         MessageBox.Show("Cadastro atualizado com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
                     }
                     else
                     {
@@ -85,8 +90,7 @@ namespace BackEndTcm
             {
                 MessageBox.Show("Arquivo de cadastro não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-          
-            this.Close();
+
 
         }
 
@@ -102,6 +106,11 @@ namespace BackEndTcm
         {
 
             this.Close();
+        }
+
+        private void txtUsuario_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

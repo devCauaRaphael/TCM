@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmFatorial));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtDigito = new System.Windows.Forms.TextBox();
@@ -43,9 +44,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(284, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 32);
+            this.label1.Size = new System.Drawing.Size(222, 26);
             this.label1.TabIndex = 0;
-            this.label1.Text = "FATORIAL";
+            this.label1.Text = "QUAL O FATORIAL";
             // 
             // label2
             // 
@@ -53,16 +54,16 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(240, 148);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(253, 20);
+            this.label2.Size = new System.Drawing.Size(225, 17);
             this.label2.TabIndex = 1;
-            this.label2.Text = "digite o valor a ser calculado";
+            this.label2.Text = "Digite o Valor a ser Calculado";
             // 
             // txtDigito
             // 
             this.txtDigito.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDigito.Location = new System.Drawing.Point(285, 180);
             this.txtDigito.Name = "txtDigito";
-            this.txtDigito.Size = new System.Drawing.Size(158, 22);
+            this.txtDigito.Size = new System.Drawing.Size(158, 19);
             this.txtDigito.TabIndex = 0;
             // 
             // btnCalc
@@ -73,7 +74,7 @@
             this.btnCalc.Name = "btnCalc";
             this.btnCalc.Size = new System.Drawing.Size(87, 34);
             this.btnCalc.TabIndex = 1;
-            this.btnCalc.Text = "calcule";
+            this.btnCalc.Text = "Calcule";
             this.btnCalc.UseVisualStyleBackColor = true;
             this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
@@ -82,7 +83,7 @@
             this.txtResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtResultado.Location = new System.Drawing.Point(285, 256);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(158, 22);
+            this.txtResultado.Size = new System.Drawing.Size(158, 19);
             this.txtResultado.TabIndex = 2;
             // 
             // btnVoltar
@@ -111,7 +112,7 @@
             // 
             // frmFatorial
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
@@ -124,10 +125,12 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.White;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmFatorial";
+            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmFatorial";
+            this.Text = "Descubra o Fatorial";
             this.ResumeLayout(false);
             this.PerformLayout();
 

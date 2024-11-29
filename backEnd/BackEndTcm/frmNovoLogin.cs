@@ -8,12 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
 
 namespace BackEndTcm
 {
     public partial class frmNovoLogin : Form
+            
     {
-        string caminhoLogin = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\login.txt";
+        string registro = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\registro.txt";
+        string loginUsuario = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
+        string loginSenha = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\senha.txt";
         public frmNovoLogin()
         {
             InitializeComponent();
@@ -21,25 +25,54 @@ namespace BackEndTcm
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
+              string senha = txtSenha.Text;
+            string usuario = txtUsuario.Text;
+
             if (txtUsuario.Text == "" || txtSenha.Text == "")
             {
-                MessageBox.Show("Dados Invalidos");
+                MessageBox.Show("EXISTE UM CAMPO VAZIO", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else
-            {
-                StreamWriter sw = new StreamWriter(caminhoLogin, true);
-                sw.WriteLine(txtUsuario.Text);       
-                sw.WriteLine(txtSenha.Text);
-                sw.WriteLine("----------------------------------------");
-                MessageBox.Show("Cadastro realizado com sucesso!");
+            else {
 
-                sw.Close();
-               txtUsuario.Clear();
-                txtSenha.Clear();
-
-                this.Hide();
+                bool duplicado = false;
+                if(File.Exists(loginUsuario))
+                    using (StreamReader sr = new StreamReader(loginUsuario)) 
+                    {
+                        string linha; 
+                        while((linha = sr.ReadLine()) != null)
+                        {
+                            if (linha.Contains("usuario:" + usuario))
+                            duplicado = true;
+                            break;
+                        }
             }
+                if (duplicado)
+                {
+                    MessageBox.Show("Usuário ou e-mail já cadastrados.", "Erro no Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+            
+                using (StreamWriter sw = new StreamWriter(registro, true))
+                {
+                    sw.WriteLine(txtUsuario.Text);
+                    sw.Write(txtSenha.Text);
+
+                }
+                using (StreamWriter sw = new StreamWriter(loginSenha, true))
+                {
+                    sw.WriteLine(senha);
+                }
+                using (StreamWriter sw = new StreamWriter(loginUsuario, true))
+                {
+                    sw.WriteLine(usuario);
+                }
+                MessageBox.Show($"Registro concluido com sucesso!", "Registro Concluido", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            txtUsuario.Clear();
+            txtSenha.Clear();
+            this.Hide();
         }
+        
 
         private void btnLimpar_Click(object sender, EventArgs e)
         {

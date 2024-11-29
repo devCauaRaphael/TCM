@@ -46,17 +46,33 @@ namespace BackEndTcm
 
         private void btnConsultar_Click_1(object sender, EventArgs e)
         {
-            List<string> listas = new List<string>();
-            string lista;
-
-            using (StreamReader sr = new StreamReader(caminho)) 
+            if (File.Exists(caminho))
             {
-                while ((lista = sr.ReadLine()) != null)
+                List<string> listas = new List<string>();
+                string lista;
+
+                using (StreamReader sr = new StreamReader(caminho))
                 {
-                    listas.Add(lista);
+                    while ((lista = sr.ReadLine()) != null)
+                    {
+                        listas.Add(lista);
+                    }
                 }
-                lsbConsulta.DataSource = listas;
+
+                if (listas.Count > 0) // Verifica se há registros na lista
+                {
+                    lsbConsulta.DataSource = listas; // Atualiza a fonte de dados da lista
+                }
+                else
+                {
+                    MessageBox.Show("Não há registros no arquivo para consulta.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            else
+            {
+                MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnSair_Click(object sender, EventArgs e)
@@ -67,16 +83,24 @@ namespace BackEndTcm
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
+
+
             if (File.Exists(caminho))
             {
                 try
                 {
-                    
                     var linhas = File.ReadAllLines(caminho).ToList();
 
-                    File.WriteAllText(caminho, string.Empty);
+                    if (linhas.Count > 0) // Verifica se há registros no arquivo
+                    {
+                        File.WriteAllText(caminho, string.Empty); // Limpa o conteúdo do arquivo
 
-                    MessageBox.Show("Registro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Registro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show("Não há registros no arquivo para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -87,9 +111,11 @@ namespace BackEndTcm
             {
                 MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            frmMenu menu = new frmMenu();
-            menu.Show();
+
             this.Hide();
+
+
+
         }
 
         private void btnAtualizar_Click(object sender, EventArgs e)

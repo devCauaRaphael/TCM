@@ -52,12 +52,6 @@
     <Compile Include="frmAtualizar.Designer.cs">
       <DependentUpon>frmAtualizar.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAtualizarProd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmAtualizarProd.Designer.cs">
-      <DependentUpon>frmAtualizarProd.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmCadastrarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,9 +135,6 @@
     <EmbeddedResource Include="frmAtualizar.resx">
       <DependentUpon>frmAtualizar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAtualizarProd.resx">
-      <DependentUpon>frmAtualizarProd.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmCadastrarCliente.resx">
       <DependentUpon>frmCadastrarCliente.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,6 +182,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
@@ -205,6 +197,84 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2652218-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2652218-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome__3_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo_Phoenix_Create_an_image_for_a_website_background_that_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leonardo_Phoenix_Create_an_illustrative_background_image_for_a_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\icons8-register-60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design_sem_nome__4_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cópia_de_Design_sem_nome-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cópia_de_Design_sem_nome__1_-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagens\logoCliente.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25-255454_publications-dados-cadastrais-png-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download-removebg-preview1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TCM IMG_00000.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-eye-password-see-view-minimalisticons-icon-thumbnail-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2383622-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Design sem nome %2813%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -25,31 +25,65 @@ namespace BackEndTcm
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
+            
         {
+            string usuario = txtUsuario.Text;
+            string nome = txtNome.Text;
+            string senha = txtSenha.Text;   
+            string email = txtEmail.Text;   
+            string telefone = mskTelefone.Text;
+
             if(txtUsuario.Text == "" || txtNome.Text == "" || txtSenha.Text == "" || txtEmail.Text == "" || mskTelefone.Text == "")
             {
-                MessageBox.Show("Dados Invalidos");
+                MessageBox.Show("Usuario ou senha incorretos.", "Falha no Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                StreamWriter sw = new StreamWriter(caminho, true);
-                sw.WriteLine(txtUsuario.Text);
-                sw.WriteLine(txtNome.Text);
-                sw.WriteLine(txtEmail.Text);
-                sw.WriteLine(txtSenha.Text);
-                sw.WriteLine(mskTelefone.Text);
-                sw.WriteLine("----------------------------------------");
-                MessageBox.Show("Cadastro realizado com sucesso!");
+                bool duplicado = false;
+                if (File.Exists(caminho))
+                {
+                    using (StreamReader sr = new StreamReader(caminho))
+                    {
+                        string linha;
+                        while ((linha = sr.ReadLine()) != null)
+                        {
+                            if (linha.Contains("usuario: " + usuario) || linha.Contains("email: " + email))
+                            {
+                                duplicado = true;
+                                break;
+                            }
+                        }
+                    }
+                }
 
-                sw.Close();
-                txtUsuario.Clear();
-                txtNome.Clear();
-                txtEmail.Clear();
-                txtSenha.Clear();
-                mskTelefone.Clear();
+                if (duplicado)
+                {
+                    MessageBox.Show("Usuário ou e-mail já cadastrados.", "Erro no Cadastro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    StreamWriter sw = new StreamWriter(caminho, true);
+                    sw.WriteLine("usuario: " + txtUsuario.Text);
+                    sw.WriteLine("nome: " + txtNome.Text);
+                    sw.WriteLine("email: " + txtEmail.Text);
+                    sw.WriteLine("senha: " + txtSenha.Text);
+                    sw.WriteLine("telefone: " + mskTelefone.Text);
+                    sw.WriteLine("----------------------------------------");
+                    MessageBox.Show("Cadastro bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    sw.Close();
+                    txtUsuario.Clear();
+                    txtNome.Clear();
+                    txtEmail.Clear();
+                    txtSenha.Clear();
+                    mskTelefone.Clear();
+
+
+                   
+                }
+
+
                 
-               
-                this.Close();
             }
         }
 
@@ -66,6 +100,16 @@ namespace BackEndTcm
         {
             
             this.Close();
+        }
+
+        private void txtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

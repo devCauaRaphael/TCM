@@ -22,17 +22,33 @@ namespace BackEndTcm
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            List<string> listas = new List<string>();
-            string lista;
-
-            using (StreamReader sr = new StreamReader(caminhoProd))
+            if (File.Exists(caminhoProd))
             {
-                while ((lista = sr.ReadLine()) != null)
+                List<string> listas = new List<string>();
+                string lista;
+
+                using (StreamReader sr = new StreamReader(caminhoProd))
                 {
-                    listas.Add(lista);
+                    while ((lista = sr.ReadLine()) != null)
+                    {
+                        listas.Add(lista);
+                    }
                 }
-                lsbConsulta.DataSource = listas;
+
+                if (listas.Count > 0) // Verifica se há registros na lista
+                {
+                    lsbConsulta.DataSource = listas; // Atualiza a fonte de dados da lista
+                }
+                else
+                {
+                    MessageBox.Show("Não há registros no arquivo para consulta.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
+            else
+            {
+                MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -43,10 +59,17 @@ namespace BackEndTcm
                 {
 
                     var linhas = File.ReadAllLines(caminhoProd).ToList();
+                    if (linhas.Count > 0)
+                    {
+                        File.WriteAllText(caminhoProd, string.Empty);
 
-                    File.WriteAllText(caminhoProd, string.Empty);
+                        MessageBox.Show("Registro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
-                    MessageBox.Show("Registro excluído com sucesso!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    else
+                    {
+                        MessageBox.Show("Não há registros no arquivo para excluir.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
                 }
                 catch (Exception ex)
                 {

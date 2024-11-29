@@ -24,16 +24,15 @@ namespace BackEndTcm
 
         private void btnCadastroCli_Click(object sender, EventArgs e)
         {
-            frmCadastrarCliente cliente = new frmCadastrarCliente();
-            cliente.Show();
-            this.Hide();
+            
         }
 
         private void btnConsultaCli_Click(object sender, EventArgs e)
         {
             frmConsultarCliente consCliente = new frmConsultarCliente();
+            consCliente.MdiParent = this;
             consCliente.Show();
-            this.Hide();
+            
         }
 
         private void btnCadastroLoja_Click(object sender, EventArgs e)
@@ -60,32 +59,33 @@ namespace BackEndTcm
         {
             frmAtualizar atualizar = new frmAtualizar();
             atualizar.Show();
-            this.Hide();
+            
         }
 
         private void cONSULTARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmConsultarCliente consCliente = new frmConsultarCliente();
-          
+            consCliente.MdiParent = this;
             consCliente.Show();
             
         }
 
         private void eDITARCADASTROToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmAtualizarProd atualizarProd = new frmAtualizarProd();
-            atualizarProd.Show();
+           /* frmAtualizarProd atualizarProd = new frmAtualizarProd();
+            atualizarProd.MdiParent = this;
+            atualizarProd.Show();*/
         }
 
         private void cLIENTESToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+          
         }
 
         private void cADASTRARToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCadastrarCliente cliente = new frmCadastrarCliente();
-          
+            cliente.MdiParent = this;
             cliente.Show();
             
         }
@@ -93,7 +93,7 @@ namespace BackEndTcm
         private void aTUALIZARCADASTROToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmAtualizar atualizar = new frmAtualizar();
-          
+            atualizar.MdiParent = this;
             atualizar.Show();
             
         }
@@ -101,7 +101,7 @@ namespace BackEndTcm
         private void fIBONACCIToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFibonacci fibonacci = new frmFibonacci();
-          
+          fibonacci.MdiParent = this;
             fibonacci.Show();
             
         }
@@ -109,6 +109,7 @@ namespace BackEndTcm
         private void mÊSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMes mes = new frmMes();
+            mes.MdiParent = this;
             mes.Show();
             
         }
@@ -116,7 +117,7 @@ namespace BackEndTcm
         private void fUTEBOLToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFutebol futebol = new frmFutebol();
-           
+           futebol.MdiParent = this;
             futebol.Show();
             
         }
@@ -124,7 +125,7 @@ namespace BackEndTcm
         private void mENOREMAIORToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMaiorMenor maiorMenor = new frmMaiorMenor();
-           
+           maiorMenor.MdiParent = this;
             maiorMenor.Show();
             
         }
@@ -132,6 +133,7 @@ namespace BackEndTcm
         private void fATORIALToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmFatorial fatorial = new frmFatorial();
+            fatorial.MdiParent = this;
             fatorial.Show();
            
         }
@@ -155,33 +157,40 @@ namespace BackEndTcm
         {
 
         }
-        private int index = 0;
         private void timeEfeitoDigitacao_Tick(object sender, EventArgs e)
         {
-             string mensagem = "Seja bem-vindo";
-       
-    
-            if (index < mensagem.Length) {
-
-               lblSejaBemVindo.Text += mensagem[index];
-                index++;
-            }
-            else
-            {
-                timeEfeitoDigitacao.Stop();
-            }
+           
         }
 
         private void cADASTRARPRODUTOSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmCadastrarProd cadastrarProd = new frmCadastrarProd();
+            cadastrarProd.MdiParent = this;
             cadastrarProd.Show();
         }
 
         private void CONSULTARCADASTRO_Click(object sender, EventArgs e)
         {
             frmConsultarProd consultarProd = new frmConsultarProd();
+            consultarProd.MdiParent = this;
             consultarProd.Show();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void vOLTARToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmLogin login = new frmLogin();
+            login.Show();
+            this.Close();
         }
     }
 }
