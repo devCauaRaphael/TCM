@@ -19,7 +19,6 @@ C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackE
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmMaiorMenor.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmAtualizar.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmNovoLogin.resources
-C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmAtualizarProd.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmCadastrarProd.resources
 C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\obj\Debug\BackEndTcm.frmConsultarProd.resources
 F:\1A-MODULAR\AMANDA\TCM - Copia\backEnd\BackEndTcm\bin\Debug\BackEndTcm.exe.config
