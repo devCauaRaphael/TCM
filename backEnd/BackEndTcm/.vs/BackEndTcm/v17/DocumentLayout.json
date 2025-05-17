@@ -3,75 +3,23 @@
   "WorkspaceRootPath": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmatualizarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmatualizarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmatualizar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmconsultarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmconsultarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmconsultarprod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarprod.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmconsultarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmconsultarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmnovologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmnovologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmnovologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmnovologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmcadastrarprod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmnovologin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmnovologin.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmlogin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\frmconsultarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmconsultarcliente.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmcadastrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:frmcadastrarcliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|c:\\users\\cauaz\\onedrive\\\u00E1rea de trabalho\\tcm\\backend\\backendtcm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{201F8EC5-5223-4C51-BB98-F267180B678D}|BackEndTcm.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -82,11 +30,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -95,219 +43,11 @@
               "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T14:51:30.433Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "frmAtualizarProd.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizarProd.cs",
-              "RelativeDocumentMoniker": "frmAtualizarProd.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizarProd.cs",
-              "RelativeToolTip": "frmAtualizarProd.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:29:24.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs",
-              "RelativeToolTip": "frmLogin.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAlwEYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:18:00.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "frmLogin.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.Designer.cs",
-              "RelativeDocumentMoniker": "frmLogin.Designer.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.Designer.cs",
-              "RelativeToolTip": "frmLogin.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:17:56.251Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmConsultarProd.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.cs",
-              "RelativeDocumentMoniker": "frmConsultarProd.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.cs",
-              "RelativeToolTip": "frmConsultarProd.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAIAzwBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:13:28.612Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "frmConsultarProd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.cs",
-              "RelativeDocumentMoniker": "frmConsultarProd.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.cs [Design]",
-              "RelativeToolTip": "frmConsultarProd.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:13:25.165Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "frmConsultarProd.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.Designer.cs",
-              "RelativeDocumentMoniker": "frmConsultarProd.Designer.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarProd.Designer.cs",
-              "RelativeToolTip": "frmConsultarProd.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:12:55.67Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "frmConsultarCliente.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.Designer.cs",
-              "RelativeDocumentMoniker": "frmConsultarCliente.Designer.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.Designer.cs",
-              "RelativeToolTip": "frmConsultarCliente.Designer.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T14:12:39.881Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmNovoLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs",
-              "RelativeDocumentMoniker": "frmNovoLogin.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs [Design]",
-              "RelativeToolTip": "frmNovoLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T22:48:56.569Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "frmCadastrarCliente.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmCadastrarCliente.cs",
-              "RelativeDocumentMoniker": "frmCadastrarCliente.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmCadastrarCliente.cs",
-              "RelativeToolTip": "frmCadastrarCliente.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAAAE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T02:07:32.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "frmNovoLogin.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs",
-              "RelativeDocumentMoniker": "frmNovoLogin.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs",
-              "RelativeToolTip": "frmNovoLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T22:48:59.203Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs",
-              "RelativeDocumentMoniker": "frmLogin.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs [Design]",
-              "RelativeToolTip": "frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:42:36.256Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmAtualizar.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizar.cs",
-              "RelativeDocumentMoniker": "frmAtualizar.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizar.cs",
-              "RelativeToolTip": "frmAtualizar.cs",
-              "ViewState": "AgIAAFYAAAAAAAAAAAAgwGsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:32:28.304Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmConsultarCliente.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.cs",
-              "RelativeDocumentMoniker": "frmConsultarCliente.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.cs [Design]",
-              "RelativeToolTip": "frmConsultarCliente.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:23:50.368Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmAtualizar.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizar.cs",
-              "RelativeDocumentMoniker": "frmAtualizar.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmAtualizar.cs [Design]",
-              "RelativeToolTip": "frmAtualizar.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:23:36.438Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "frmConsultarCliente.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.cs",
-              "RelativeDocumentMoniker": "frmConsultarCliente.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmConsultarCliente.cs",
-              "RelativeToolTip": "frmConsultarCliente.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAtwDgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T22:03:28.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "frmCadastrarProd.cs",
-              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmCadastrarProd.cs",
-              "RelativeDocumentMoniker": "frmCadastrarProd.cs",
-              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmCadastrarProd.cs",
-              "RelativeToolTip": "frmCadastrarProd.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAQwF0AAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T01:44:14.002Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "frmCadastrarProd.cs [Design]",
               "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmCadastrarProd.cs",
               "RelativeDocumentMoniker": "frmCadastrarProd.cs",
@@ -315,7 +55,46 @@
               "RelativeToolTip": "frmCadastrarProd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T22:44:20.594Z",
+              "IsPinned": true,
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "frmNovoLogin.resx",
+              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.resx",
+              "RelativeDocumentMoniker": "frmNovoLogin.resx",
+              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.resx",
+              "RelativeToolTip": "frmNovoLogin.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-05-17T01:08:26.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "frmNovoLogin.cs",
+              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs",
+              "RelativeDocumentMoniker": "frmNovoLogin.cs",
+              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmNovoLogin.cs",
+              "RelativeToolTip": "frmNovoLogin.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAD4vxsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T22:48:59.203Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "frmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs",
+              "RelativeDocumentMoniker": "frmLogin.cs",
+              "ToolTip": "C:\\Users\\cauaz\\OneDrive\\\u00C1rea de Trabalho\\TCM\\backEnd\\BackEndTcm\\frmLogin.cs",
+              "RelativeToolTip": "frmLogin.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAD4vzsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T14:18:00.448Z",
+              "EditorCaption": ""
             }
           ]
         }
