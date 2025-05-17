@@ -81,7 +81,7 @@ namespace BackEndTcm
                 MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         
-            this.Close();
+          
         }
 
         private void btnSair_Click(object sender, EventArgs e)

@@ -29,11 +29,11 @@ namespace BackEndTcm
 
             // O caminho do arquivo de cadastro
 
-            string usuario = txtUsuario.Text; // O nome de usuário fornecido
-            string novoNome = txtNome.Text; // Novo nome fornecido
-            string novoEmail = txtEmail.Text; // Novo email fornecido
-            string novaSenha = txtSenha.Text; // Nova senha fornecida
-            string novoTelefone = mskTelefone.Text; // Novo telefone fornecido
+            string usuario = txtUsuario.Text; 
+            string novoNome = txtNome.Text; 
+            string novoEmail = txtEmail.Text; 
+            string novaSenha = txtSenha.Text; 
+            string novoTelefone = mskTelefone.Text;
 
             if (string.IsNullOrWhiteSpace(usuario) ||
                 string.IsNullOrWhiteSpace(novoNome) ||
@@ -51,7 +51,7 @@ namespace BackEndTcm
                     var linhas = File.ReadAllLines(caminho);
                     bool registroAtualizado = false;
 
-                    // Itera pelas linhas para encontrar o usuário
+                    //  procura o usuário
                     for (int i = 0; i < linhas.Length; i++)
                     {
                         string linha = linhas[i];

@@ -42,7 +42,7 @@
             this.label1.Location = new System.Drawing.Point(304, 26);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(119, 24);
+            this.label1.Size = new System.Drawing.Size(151, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "FIBONACCI";
             // 
@@ -53,7 +53,7 @@
             this.button1.Location = new System.Drawing.Point(280, 234);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(230, 31);
-            this.button1.TabIndex = 1;
+            this.button1.TabIndex = 0;
             this.button1.Text = "gerar sequencia";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -64,7 +64,7 @@
             this.txtResultado.Multiline = true;
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(368, 92);
-            this.txtResultado.TabIndex = 2;
+            this.txtResultado.TabIndex = 1298;
             // 
             // btnVoltar
             // 
@@ -73,7 +73,7 @@
             this.btnVoltar.Location = new System.Drawing.Point(474, 381);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(83, 30);
-            this.btnVoltar.TabIndex = 3;
+            this.btnVoltar.TabIndex = 2;
             this.btnVoltar.Text = "VOLTAR";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
@@ -85,14 +85,14 @@
             this.btnLimpar.Location = new System.Drawing.Point(309, 381);
             this.btnLimpar.Name = "btnLimpar";
             this.btnLimpar.Size = new System.Drawing.Size(83, 30);
-            this.btnLimpar.TabIndex = 4;
+            this.btnLimpar.TabIndex = 1;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.UseVisualStyleBackColor = true;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // frmFibonacci
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.ClientSize = new System.Drawing.Size(800, 450);

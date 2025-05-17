@@ -14,9 +14,9 @@ namespace BackEndTcm
     public partial class frmLogin : Form
 
     {
-        private bool senhaVisivel = false;  
+        private bool senhaVisivel = false;
         string registro = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\registro.txt";
-        string loginUsuario =  @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
+        string loginUsuario = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
         string loginSenha = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
         public frmLogin()
         {
@@ -24,26 +24,30 @@ namespace BackEndTcm
         }
 
         private void button1_Click(object sender, EventArgs e)
-        {   string usuario = txtUsuario.Text;
+        {
+
+
+            string usuario = txtUsuario.Text;
             string senha = txtSenha.Text;
-           
-                if (txtUsuario.Text == "" || txtSenha.Text == "")
-                {
+
+            if (txtUsuario.Text == "" || txtSenha.Text == "")
+            {
                 MessageBox.Show("Usuário ou senha incorretos!", "erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Focus();
                 txtSenha.Focus();
                 txtUsuario.Clear();
                 txtSenha.Clear();
             }
-            
-                else if(File.Exists(loginUsuario) && File.Exists(loginSenha))
+
+
+            else if (File.Exists(loginUsuario) && File.Exists(loginSenha))
             {
                 string[] usuarios = File.ReadAllLines(loginUsuario);
                 string[] senhas = File.ReadAllLines(loginSenha);
                 bool loginEncontrado = false;
                 for (int i = 0; i < usuarios.Length; i++)
                 {
-                    if(i<senhas.Length && usuarios[i] == usuario && senhas[i] == senha || txtUsuario.Text == "Admin" && txtSenha.Text == "cidade123")
+                    if (i < senhas.Length && usuarios[i] == usuario && senhas[i] == senha || txtUsuario.Text == "Admin" && txtSenha.Text == "cidade123")
                     {
                         MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loginEncontrado = true;
@@ -57,10 +61,10 @@ namespace BackEndTcm
                 {
                     MessageBox.Show("Usuario ou senha incorretos.", "Falha no Login", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-                
+
             }
         }
-             
+
 
         private void button1_Click_1(object sender, EventArgs e)
         {

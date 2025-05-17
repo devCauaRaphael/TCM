@@ -153,6 +153,7 @@
             this.label3.Size = new System.Drawing.Size(61, 20);
             this.label3.TabIndex = 6;
             this.label3.Text = "Senha";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label5
             // 
@@ -200,7 +201,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(72)))), ((int)(((byte)(255)))));
             this.pictureBox3.Image = global::BackEndTcm.Properties.Resources.logoCliente;
             this.pictureBox3.Location = new System.Drawing.Point(777, 103);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(92, 90);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;

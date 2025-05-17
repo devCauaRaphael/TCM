@@ -136,7 +136,7 @@ namespace BackEndTcm
                 MessageBox.Show("Cadastro bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                
                sw.Close();
-                this.Close();              
+                            
             }
         }
 

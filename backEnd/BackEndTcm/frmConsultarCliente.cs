@@ -48,11 +48,13 @@ namespace BackEndTcm
         {
             if (File.Exists(caminho))
             {
+                // criação de uma lista, que armazenará todas as linhas do arquivo
                 List<string> listas = new List<string>();
                 string lista;
 
                 using (StreamReader sr = new StreamReader(caminho))
                 {
+                    // lê todas as linhas do arquivo e adiciona na lista
                     while ((lista = sr.ReadLine()) != null)
                     {
                         listas.Add(lista);
@@ -112,7 +114,7 @@ namespace BackEndTcm
                 MessageBox.Show("Arquivo não encontrado!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            this.Hide();
+            
 
 
 

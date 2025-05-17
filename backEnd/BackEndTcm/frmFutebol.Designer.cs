@@ -104,9 +104,9 @@
             // 
             // txtResultado
             // 
-            this.txtResultado.Location = new System.Drawing.Point(474, 305);
+            this.txtResultado.Location = new System.Drawing.Point(477, 310);
             this.txtResultado.Name = "txtResultado";
-            this.txtResultado.Size = new System.Drawing.Size(177, 22);
+            this.txtResultado.Size = new System.Drawing.Size(218, 22);
             this.txtResultado.TabIndex = 2;
             this.txtResultado.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
             // 

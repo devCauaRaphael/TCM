@@ -1,0 +1,243 @@
+@media (max-width: 601px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  body.temaEscuro {
+    --corFundo: #1b004b;
+    --corFonte: #f3f3f3;
+    --coresFundo01: #333;
+    --coresFundo02: #5dc1b9;
+    --corFundo03: #add8e6;
+    --footerHeader: #00008b;
+    --corHover: #007bff;
+  }
+  body.temaClaro {
+    --corFundo: #f3f3f3;
+    --coresFundo02: #8282df;
+  }
+  header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:var(--footerHeader);
+    box-sizing: border-box;
+  }
+  /*estilização menu hamburguer*/
+  .menu {
+    display: none;
+  }
+  .menu.open {
+    display: block;
+  }
+
+  .containerLogo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 50px;
+    height: auto;
+    background-color: var(--corFundo);
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  .containerLogo p {
+    margin: 0;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 30%;
+    background-color: var(--coresFundo01);
+  }
+
+  /*estilização carrosseis*/
+  .carrossel01,
+  .carrossel02,
+  .carrossel03 {
+    position: relative;
+    max-width: 80vw; /* 80% da largura do carrosel em relação ao viewport */
+    height: 60vh; /* Altura do carrossel em relação ao viewport */
+    margin: 5vh auto; /* Margem superior em relação ao viewport */
+    overflow: hidden; /* Oculta o conteudo que ultrapassa o carrossel */
+    border-radius: 1rem;
+  }
+
+  .slides01,
+  .slides02,
+  .slide03 {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide01,
+  .slide02,
+  .slide03 {
+    min-width: 100%; /* Cada slide ocupa 100% da largura do carrossel */
+    height: 100%; /* Altura dos slides */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* Tamanho do texto dos slides */
+  }
+  .slide {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
+  
+  .slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide img.ativo {
+    opacity: 1;
+  }
+
+
+
+  /*estilizacão do sobre nós*/
+  .sobreNos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    margin: 3em;
+  }
+  .Sobre {
+    text-align: center;
+    color: var(--coresFundo01);
+    background-color: var(--coresFundo02);
+    border-radius: 3em;
+    margin: 1vh;
+  
+    flex-direction: column;
+  }
+  .Sobre h1 {
+    text-align: center;
+    border: 0.5px solid var(--corFundo03);
+    border-radius: 2em;
+    background-color: var(--corFundo03);
+    margin: 5vh;
+    margin: 1em 18vw 1em 18vw;
+  }
+  .Sobre p {
+    font-size: 1.2rem;
+  }
+  footer {
+    background-color: var(--footerHeader);
+    color: var(--corFonte);
+    padding: 5px 0;
+    text-align: center;
+    font-size: 10px;
+  }
+
+  .containerFooter {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .logoFooter img {
+    max-width: 100px;
+    margin-bottom: 5px;
+  }
+
+  .redes {
+    margin: 4px 0;
+  }
+
+  .redes img {
+    width: 24px;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+  }
+
+  footer p {
+    margin-top: 10px;
+    font-size: 8px;
+    line-height: 1.2;
+  }
+  .carrosselDivulgacao{
+    display: none;
+  }
+}
+@media (min-width: 602px) {
+  .menuHamburguer {
+    display: none;
+  }
+  .menu {
+    display: block;
+    position: static;
+    background-color: transparent;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .menu ul li {
+    margin: 0 20px;
+  }
+  .menu ul li a {
+    color: var(--corFonte);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .slide01 img,
+  .slide02 img {
+    width: 8vw;
+    height: auto;
+    margin: 3em;
+  }
+
+  .slide03 img {
+    width: 8vw;
+    height: auto;
+    margin: 3em;
+  }
+  button.prev01,
+  button.prev02,
+  button.prev03 {
+    left: 18vw;
+  }
+  button.next01,
+  button.next02,
+  button.next03 {
+    right: 18vw; /* 1% da largura do viewport */
+  }
+  button.prev01 img,
+  button.next01 img,
+  button.prev02 img,
+  button.next02 img
+  {
+    width: 7vh;
+    height: auto;
+    margin-bottom: 3em;
+  }
+  button.prev03 img,
+  button.next03 img{
+    width: 7vh;
+    height: auto;
+    margin-bottom: 5em;
+  }
+}

@@ -21,8 +21,8 @@ namespace BackEndTcm
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            string registroAntigo = caminhoProd; // O registro que você quer atualizar
-            string usuario = txtUsuario.Text; // O nome de usuário fornecido
+            string registroAntigo = caminhoProd; 
+            string usuario = txtUsuario.Text;
             string novoNome = txtNome.Text; // Novo nome fornecido
         
 
