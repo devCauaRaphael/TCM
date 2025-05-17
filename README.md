@@ -1,4 +1,5 @@
 TRABALHO DE CONCLUSÃO DE MÓDULO
+
 Projeto desenvolvido como trabalho de conclusão de módulo, com foco no desenvolvimento da lógica de programação usando ferramentas simples e acessíveis. O destaque principal está na criação de um CRUD completo (Create, Read, Update, Delete) no back-end utilizando C# e arquivos .txt para simular um banco de dados. O front-end foi criado de forma separada, apenas como base visual, sem integração com o back-end. O objetivo principal é praticar estruturação de sistemas e reforçar fundamentos da lógica.
 
 ✅ Como rodar o projeto
@@ -10,7 +11,7 @@ Abra o arquivo index.html no navegador.
 Back-end
 Abra a pasta backEnd/ no Visual Studio.
 
-Execute o arquivo Program.cs pelo Visual Studio.
+Execute o projeto
 
 🗂️ Estrutura de pastas do projeto
 /TCM
@@ -23,7 +24,8 @@ Execute o arquivo Program.cs pelo Visual Studio.
 │       └──  script.js
 │
 └── backEnd/
-    └── Program.cs
+        BackEndTcm/
+              └── BackEndTcm.sln
 🧰 Tecnologias utilizadas
 HTML: estrutura básica da interface.
 
