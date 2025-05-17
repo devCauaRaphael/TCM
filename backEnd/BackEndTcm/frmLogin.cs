@@ -15,10 +15,8 @@ namespace BackEndTcm
 
     {
         private bool senhaVisivel = false;
-        string registro = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\registro.txt";
         string loginUsuario = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
-        string loginSenha = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\usuario.txt";
-        string loginSenhaNovo = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\senha.txt";
+        string loginSenha = @"C:\Users\cauaz\OneDrive\Área de Trabalho\TCM\backEnd\BackEndTcm\database\senha.txt";
         public frmLogin()
         {
             InitializeComponent();
@@ -45,11 +43,10 @@ namespace BackEndTcm
             {
                 string[] usuarios = File.ReadAllLines(loginUsuario);
                 string[] senhas = File.ReadAllLines(loginSenha);
-                string[] senhasNovo = File.ReadAllLines(loginSenhaNovo);
                 bool loginEncontrado = false;
                 for (int i = 0; i < usuarios.Length; i++)
                 {
-                    if (i < senhas.Length && usuarios[i] == usuario && senhas[i] == senha || txtUsuario.Text == "Admin" && txtSenha.Text == "cidade123" || i < senhasNovo.Length && usuarios[i] == usuario && senhasNovo[i] == senha)
+                    if (i < senhas.Length && usuarios[i] == usuario && senhas[i] == senha)
                     {
                         MessageBox.Show("Login bem-sucedido!", "Sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         loginEncontrado = true;
